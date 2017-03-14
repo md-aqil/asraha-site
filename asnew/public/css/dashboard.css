@@ -1,0 +1,128 @@
+.sidebar .ui.card {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(235, 239, 242, 0.49);
+}
+.ui.card .image .dash-img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #ddd !important;
+    padding: 3px;
+}
+.sidebar {
+  width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12);
+    margin-top: -25px;
+    padding-top: 17px;
+}
+.shadow-container.no-padding {
+    padding: 10px 0px;
+    padding-right: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12);
+}
+.shadow-container {
+  border: 1px solid #e5e5e5;
+    box-shadow: 0 0 5px #e4e4e4;
+    background: #fff;
+    padding: 10px 20px;
+}
+.text-normal {
+    font-weight: 300;
+}
+.segment {
+  position: relative;
+    background: #ffffff;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    margin: 1rem 0em;
+    padding: 1em 1em;
+    border-radius: 0.28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+}
+.sidebar-list li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #577688;
+    border-bottom: 1px solid rgba(235, 239, 242, 0.49);
+    border-left: 2px solid #fff;
+}
+.sidebar-list .nav.active a:hover {
+  background: none;
+  border-radius: none;
+  border:none;
+}
+.sidebar-list .nav.active a:focus {
+  background: none;
+}
+.sidebar-list .nav.active a{
+   background: #EBEFF2;
+    border-radius: 0;
+    border:none;
+    background: none;
+}
+.sidebar-list .nav-tabs > li > a {
+  margin: 0;
+}
+.sidebar-list .content {
+  border-top: 1px solid rgba(235, 239, 242, 0.49);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar-list .content a {
+  color: #000;
+}
+.tab-content .active {
+  background: none;
+}
+.btn.btn-primary {
+  padding: 9px 20px;
+    color: #fff;
+    background: #2185d0;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.57);
+    border: 1px solid #2185d0;
+    -webkit-transition: background .1s ease-in;
+}
+.pl0 {
+  padding-left: 0;
+}
+.panel-heading {
+  position: relative;
+  
+}
+.rmv-blog {
+      width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+}
+.hbs:hover {
+box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.rmv-blog .btn{
+    background: #f70000;
+    
+    float: right;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.rmv-blog .btn.blue{
+  background: #2185d0 !important;
+  color: #fff;
+}
+
+.popover-content .btn-group{
+      margin-left: 6px;
+}
+.popover-content {
+  text-align: center;
+}
+.popover-content .btn {
+   float: none;
+}

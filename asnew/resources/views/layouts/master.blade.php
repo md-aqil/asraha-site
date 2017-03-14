@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Application</title>
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/effect.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/dashboard.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	
+</head> 
+
+<body>
+	@include('layouts.nav')
+	
+	@yield('content')
+
+	@include('layouts.footer')
+
+<script>
+var elem =
+    'Are You Sure You watn to delete this'+
+    ' <button type="button" class="btn btn-danger">Yes</button>';
+
+	$(function () {
+  $('[data-toggle="popover"]').popover({animation:true, content:elem, html:true});
+})
+</script>
+</body>
+</html>
