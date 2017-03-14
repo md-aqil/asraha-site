@@ -178,144 +178,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1p
 }
 /* progress-bar */
 
-/* tabs */
-.main-tab-box {
- max-width: 100%;
-  margin: 0 auto;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-top-color: #00B4F1;
-}
 
-input {
-  display: none;
-}
-
-label {
-  display: inline-block;
-  margin: 0 0 -5px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #484848;
-  border: 1px solid transparent;
-}
-
-label:hover {
-  color: #888;
-  cursor: pointer;
-}
-
-input:checked + label {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 2px solid #00B4F1;
-  border-bottom: 1px solid #fff;
-  background: rgba(0, 0, 0, 0.1);
-  /*color: #fff;*/
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
-  display: block;
-}
-.header {position: relative;}
-.res-icon {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-@media screen and (max-width: 650px) {
-  label {
-    font-size: 0;
-  }
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
- /*  .res-header-desktop {
-  	display: none;
-  }
-  .res-header-mobile {
-  	display: block;
-  } */
-
-}
-
-
-
-#content2 p, #content1 p  {
-  display: inline-block;
-  padding: 10px;
-  margin-left: 45px;
-}
-#content2:last-child p{
-  
-}
-.tab-title {
-  display: block;
-  background: #f7f7f7;
-  padding: 10px;
-}
-
-.welness {
-  margin: 0 auto;
-  /*margin-left: 32px;*/
-  width: 100%;
-}
-.bottom {
-	position: relative;
-	width: 100%;
-	height: 80px;
-	background: #201F21;
-}
-
-/* img-hover-effect  */
-.tabs-img {
-	position: relative;
-	margin-top: 10px;
-	-webkit-transition: all .3s ease-in;
-
-}
- .tabs-img-overlay {
-	width: 100%;
-	height: 0px;
-	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	-webkit-transition: all .2s ease-in;
-	color: #fff;
-}
-.tabs-img-overlay .over-title {
-	font-weight: 300;
-	text-align: center;
-}
-.tabs-img:hover{
-	
-}
-.tabs-img:hover .tabs-img-overlay {
-	height: 100px;
-}
-
-.no-padding {
-    padding-right: 0px;
-    padding-left: 0px;
-   
-}
-.apporch-box {
-	height: 500px;
-}
-.mt100 {
-	margin-top: 100px;
-}
-.mb100 {
-	margin-bottom: 	100px;
-}
 
 /* second-tabs-styling-from-here */
 .tabs-item {
@@ -674,7 +537,7 @@ background: none;
 /*blog*/
 .blog-content-box {
 	width: 100%;
-	height: 210px;
+	min-height: 100px;
 	overflow: hidden;
 }
 .blog-list {

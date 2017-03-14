@@ -4,7 +4,9 @@
 
 <div class="container-fluid bg-gray">
 	@if(session('success'))
-	<div class="alert alert-success">{{ session('success') }}</div>
+	<div class="alert alert-success">{{ session('success') }}
+	<a href="/" class="btn btn-success pull-right" style="margin-top: -5px;"> Visit Site</a>
+	</div>
 	@endif
 	<div class="row">
 		<div class="container shadow-container no-padding">
@@ -38,14 +40,17 @@
 				    	<div class="segment">
 				    		<form method="POST" action="/posts" enctype="multipart/form-data">
 				    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-				    			<div class="form-group">
-				    				<input type="text" name="title" class="form-control" placeholder="Title">
+				    		<div class="form-group">
+				    				<input type="text" name="author" class="form-control" placeholder="Author Name">
 				    			</div>
 				    			<div class="form-group">
-				    				<textarea name="body" id="body" class="form-control" placeholder="Massage"></textarea>
+				    				<input type="text" name="title" class="form-control" placeholder="Title" required>
+				    			</div>
+				    			<div class="form-group">
+				    				<textarea name="body" id="body" class="form-control" placeholder="Massage" required></textarea>
 				    			</div>
 				    			<div class="form-group clearfix segment">
-				    				<input type="file" name="blog-image" class="pull-left">
+				    				<input type="file" name="blog-image" class="pull-left" required>
 				    				<button class="btn btn-primary pull-right">Publish</button>
 				    			</div>
 				    		</form>

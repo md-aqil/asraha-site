@@ -35,6 +35,7 @@ class PostsController extends Controller
         $path = $this->storeImage( request()->file('blog-image'));
       }
       $post = new Post;
+      $post->author = request('author');
       $post->title = request('title');
       $post->body = request('body');
       $post->image = $path;

@@ -53,7 +53,7 @@
 								  <li class="media">
 								    <div class="media-left">
 								      <a href="#">
-								        <img class="media-object" src="<img  src="{{ asset($post->image)}}">" width="50" alt="">
+								        <img class="media-object" src="<img  src="{{ asset($post->image)}}" width="50" alt="">
 								      </a>
 								    </div>
 								    <div class="media-body">
@@ -85,7 +85,7 @@
 						   		<h4 class="media-heading">
 						   		<a href="/posts/{{$post->id}}">{{ $post->title }}</a>
 						   		</h4>
-						   		<p class="text-muted">{{$post->created_at->toFormattedDateString() }}</p>
+						   		<p class="text-muted">{{$post->created_at->toFormattedDateString() }} | {{ $post->author }}</p>
 						  </div>
 						</li>
 						@endforeach

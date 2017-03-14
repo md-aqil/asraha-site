@@ -74,14 +74,14 @@
 										<div class="por">
 								     <div class="news-photos"><img  src="{{ asset($post->image)}}"></div>
 								      		<div class="this-overlay2 newslink"> </div>
-				              				<a href="see-all-news.php" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
+				              				<a href="/posts/{{$post->id}}" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
 								     </div>
 								     
 								</div>
 								<div class="col-md-7">
 								<h3 class="news-header"><a href="/posts/{{$post->id}}">{{ $post->title }}</a></h3>
 
-								<p class="text-muted">{{$post->created_at->toFormattedDateString() }} By: Author</p>
+								<p class="text-muted">{{$post->created_at->toFormattedDateString() }} By: {{ $post->author }}</p>
 								<hr class="hr-dashed" />
 								<div class="blog-content-box">
 									<p class="abh text-black">
@@ -283,124 +283,12 @@
 	</div><!-- container -->
 	<hr>
 
-	{{-- tabs END--}}
-
-
-	<div class="container-fluid">
-	<div class="">
-		<h1 class="title-header">Glarries</h1>
-		<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
-		<h3>&nbsp;</h3>
-		<main class="main-tab-box">
-	  <input id="tab1" type="radio" name="tabs" checked>
-	  <label for="tab1" class="ripple" data-ripple-color="#8c8c8c"> Personalized Plan</label>
-	    
-	  <input id="tab2" type="radio" name="tabs">
-	  <label for="tab2" class="ripple" data-ripple-color="#8c8c8c"> For Corporate</label>
-	    
-	  <input id="tab3" type="radio" name="tabs">
-	  <label for="tab3" class="ripple" data-ripple-color="#8c8c8c"> Wellness Package</label>
-	    
-	  <input id="tab4" type="radio" name="tabs">
-	  <label for="tab4" class="ripple" data-ripple-color="#8c8c8c"> Drupal</label>
-	  <section class="tab-content" id="content1">
-	    <div class="row">
-		 <div class="col-md-4">
-		 	<div class="tabs-img">
-		 		<img class="img-responsive" src="img/Green-Nature-Trees-l.jpg" alt="">
-		 		<div class="tabs-img-overlay">
-		 			<h3 class="over-title">Lorem ipsum dolor sit amet.</h3>
-		 		</div>	
-		 	</div>
-		 </div>
-	   	 <div class="col-md-4">
-		 	<div class="tabs-img">
-		 		<img class="img-responsive" src="img/Green-Nature-Trees-l.jpg" alt="">
-		 		<div class="tabs-img-overlay">
-		 			<h3 class="title-header">Lorem ipsum dolor sit amet.</h3>
-		 		</div>	
-		 	</div>
-		 </div>
-		  <div class="col-md-4">
-		 	<div class="tabs-img">
-		 		<img class="img-responsive" src="img/Green-Nature-Trees-l.jpg" alt="">
-		 		<div class="tabs-img-overlay">
-		 			<h3 class="title-header">Lorem ipsum dolor sit amet.</h3>
-		 		</div>	
-		 	</div>
-		 </div>
-		 <div class="col-md-4">
-		 	<div class="tabs-img">
-		 		<img class="img-responsive" src="img/Green-Nature-Trees-l.jpg" alt="">
-		 		<div class="tabs-img-overlay">
-		 			<h3 class="over-title">Lorem ipsum dolor sit amet.</h3>
-		 		</div>	
-		 	</div>
-		 </div>
-		 <div class="col-md-4">
-		 	<div class="tabs-img">
-		 		<img class="img-responsive" src="img/Green-Nature-Trees-l.jpg" alt="">
-		 		<div class="tabs-img-overlay">
-		 			<h3 class="over-title">Lorem ipsum dolor sit amet.</h3>
-		 		</div>	
-		 	</div>
-		 </div>
-		  <div class="col-md-4">
-		 	<div class="tabs-img">
-		 		<img class="img-responsive" src="img/Green-Nature-Trees-l.jpg" alt="">
-		 		<div class="tabs-img-overlay">
-		 			<h3 class="over-title">Lorem ipsum dolor sit amet.</h3>
-		 		</div>	
-		 	</div>
-		 </div>
-		 </div>
-	  </section>
-	    
-	  <section class="tab-content" id="content2">
-	 	
-	  </section>
-	    
-	  <section class="tab-content" id="content3">
-	  <h1>Lorem ipsum dolor sit.</h1>
-	   
-	  </section>
-	    
-	  <section class="tab-content" id="content4">
-	  	<h1>Lorem ipsum dolor sit.</h1>
-	  
-	  </section>
-	</main>
-	</div>
-	</div>
-	{{-- tabs END--}}
-
-		<div class="container-fluid bg-gray">
-		<div class="pointer-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<p class="rating-p">533</p>
-					</div>
-					<div class="col-md-3">
-						<p class="rating-p">533</p>
-					</div>	
-					<div class="col-md-3">
-						<p class="rating-p">533</p>
-					</div>	
-					<div class="col-md-3">
-						<p class="rating-p">533</p>
-					</div>		
-						
-				</div>
-			</div>
-		</div>
-	</div>
 	{{-- another --}}
 
 		<div class="container">
 			<div class="apporch-box">
 			<h5>&nbsp;</h5>
-				<h1 class="title-header">Information</h1>
+				<h1 class="title-header">Glarries</h1>
 				<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
 			<h1>&nbsp;</h1>
 				<div class="content-box">

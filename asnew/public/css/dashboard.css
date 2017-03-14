@@ -126,3 +126,7 @@ box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 .popover-content .btn {
    float: none;
 }
+.news-photos img {
+   height: 160px;
+   object-fit: cover;
+}
