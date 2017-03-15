@@ -15,6 +15,7 @@
 <script src="/js/malsap.js"></script>
 <script src="/js/carousel.js"></script>
 <script src="/js/bootstrap.js"></script>
+<script src="/js/atvImg.js"></script>
 
 <script>
 	$(document).ready(function() {
@@ -150,6 +151,8 @@ $(document).ready(function(){
     
   });
 })(window, jQuery);
+
+atvImg();
 </script>
 <!-- for ripple effec  End-->
 

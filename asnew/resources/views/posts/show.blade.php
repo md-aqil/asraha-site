@@ -24,7 +24,7 @@
 						<div class="">
 							<h4 class="head-name">{{ $post->title }}</h4>
 							<p class="text-muted">{{$post->created_at->toFormattedDateString() }} | &nbsp; Mukhya of Ashraha</p>
-							<div class="">
+							<div class="lstsn">
 								<img  src="{{ asset($post->image)}}">
 							</div>
 					  		<div class="blog-content-box">

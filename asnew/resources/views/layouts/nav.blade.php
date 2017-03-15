@@ -3,13 +3,13 @@
 		<div class="row">
 			<div class="header animated">
 				<div class="container">
-				<h1 class="pull-left asraha-logo text-shadow"><a href="index.php"><img src="{{ asset('img/as-logo-black-s.png') }}" alt=""></a></h1>
+				<h1 class="pull-left asraha-logo text-shadow"><a href="index.php"><img src="{{ asset('img/logoio.png') }}" alt=""></a></h1>
 					<ul class="nav-ul">
-						<li><a href="index.php">Home</a></li>
-						<li><a href="see-all-news.php">News feed</a></li>
-						<li><a href="schools.php">Education</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="">News feed</a></li>
+						<li><a href="/india">About India</a></li>
 						<li><a href="">Asraha info</a></li>
-						<li><a href="aboutus.php">About us</a></li>
+						<li><a href="/about">About us</a></li>
 					</ul>
 			</div>
 				</div>

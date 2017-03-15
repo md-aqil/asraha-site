@@ -24,10 +24,17 @@
 						    </div>
 						  </div>
 						</div>
-				    <ul class="nav nav-tabs nav-pills nav-stacked">
-				        <li class="nav active"><a href="#A" data-toggle="tab">Create a post</a></li>
-				        <li class="nav"><a href="#B" data-toggle="tab">B</a></li>
-				        <li class="nav"><a href="#C" data-toggle="tab">C</a></li>
+				    <ul class="nav nav-tabs nav-pills nav-stacked" id="svg-icon">
+				        <li class="nav active"><a href="#A" data-toggle="tab">
+				        <img src="/img/hand-gesture.svg" alt="">
+				        Create a post</a>
+				        </li>
+				        <li class="nav"><a href="#B" data-toggle="tab">
+				         <img src="/img/pictures.svg" alt="">
+				        Create front banner</a></li>
+				        <li class="nav"><a href="#C" data-toggle="tab">
+				        <img src="/img/manager.svg" alt="">
+				        Creat Valuable leaders</a></li>
 				    </ul>
 				</div>
 			</div>
@@ -38,7 +45,7 @@
 				    <div class="tab-pane fade in active" id="A">
 						<h2 class="">Create a post</h2>
 				    	<div class="segment">
-				    		<form method="POST" action="/posts" enctype="multipart/form-data">
+				    	<form method="POST" action="/posts" enctype="multipart/form-data">
 				    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 				    		<div class="form-group">
 				    				<input type="text" name="author" class="form-control" placeholder="Author Name">
@@ -79,7 +86,7 @@
 				    						<i class="glyphicon glyphicon-pencil"></i></button>
 				    						
 				    					</div>
-				    				<img class="width100" src="{{ asset($post->image)}}" alt="">
+				    				<img class="pimg" src="{{ asset($post->image)}}" alt="">
 				    				</div>
 				    				  <div class="panel-body">
 				    					  <div>
@@ -101,8 +108,79 @@
 				    </div>
 
 
-				    <div class="tab-pane fade" id="B">Content inside tab B</div>
-				    <div class="tab-pane fade" id="C">Content inside tab C</div>
+				    <div class="tab-pane fade" id="B">
+				    <h2 class="">Create front banner and there title</h2>
+				    	<div class="segment">
+				    		<form method="POST" action="/fronts" enctype="multipart/form-data">
+				    			<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+				    				<div class="form-group">
+				    					<textarea name="body" id="body" class="form-control" placeholder="Massage" required></textarea>
+				    				</div>
+				    				<div class="form-group clearfix segment">
+				    					<input type="file" name="front-image" class="pull-left" required>
+				    					<button class="btn btn-primary pull-right">Publish</button>
+				    				</div>
+				    			</form>
+				    	</div>
+				    	<div class="imdlt">
+				    		<div class="row">
+				    		@foreach($fronts as $front)
+				    		  <div class="col-md-3">
+				    		    <a href="#" class="thumbnail clearfix">
+				    		        <button class="badge danger pull-right">X</button>
+				    				<img src="{{ asset($front->image)}}" alt="">
+				    		    </a>
+				    		    <ul class="list-group">
+				    		      <li class="list-group-item">
+				    		        <button class="badge danger">X</button>
+				    		        {{ $front->body }}
+				    		      </li>
+				    		    </ul>
+				    		  </div>
+				    		@endforeach
+				    		</div>
+				    			
+				    	</div>
+				    </div>
+
+				    <div class="tab-pane fade" id="C">
+				    <h1>Creat Valuable leaders and about him</h1>
+				    <div class="segment">
+				    	<form method="POST" action="/valuable" enctype="multipart/form-data">
+				    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+				    		<div class="form-group">
+				    				<input type="text" name="name" class="form-control" placeholder="Name">
+				    			</div>
+				    			<div class="form-group">
+				    				<input type="text" name="number" class="form-control" placeholder="Number or Email" required>
+				    			</div>
+				    			<div class="form-group">
+				    				<textarea name="massage" id="massage" class="form-control" placeholder="Massage" required></textarea>
+				    			</div>
+				    			<div class="form-group clearfix segment">
+				    				<input type="file" name="value-image" class="pull-left" required>
+				    				<button class="btn btn-primary pull-right">Publish</button>
+				    			</div>
+				    		</form>
+				    </div>
+						
+						<div class="imdlt">
+				    		<div class="row">
+				    		@foreach($valuables as $valuable)
+				    		  <div class="col-md-3">
+				    		    <a href="#" class="thumbnail clearfix text-black">
+				    		   {{$valuable->number}}
+				    		        <button class="badge danger pull-right">X</button>
+				    				<img src="{{ asset($valuable->image)}}" alt="">
+				    				<p class="">{{$valuable->massage}}</p>
+				    		    </a>
+				    		  </div>
+				    		@endforeach
+				    		</div>
+				    			
+				    	</div>
+
+				    </div>
 				</div>
 			</div>
 		</div>

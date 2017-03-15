@@ -1,0 +1,228 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+body {
+	 	font-size: 16px;
+}
+
+.front-banner-box {
+	
+	height: 950px;
+}
+
+.india-title {
+	background-image:url('../img/loop-img.jpg');
+    font-size:300px;
+    text-transform:uppercase;
+    text-align:center;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+    background-position: 0% 0%;
+    font-weight: bolder;
+    margin-bottom: -100px;
+     font-family: Lato;
+     letter-spacing: 16px;
+     /*background-repeat: repeat-x;*/
+     -webkit-animation: bg-anim 30s linear infinite;
+	}
+
+	.bg-color {
+		width: 100%;
+		height: 520px;
+		background-color: #E1DECF;
+	}
+	.welcom-title {
+		font-size: 100px;
+		text-align: center;
+		margin-bottom: -25px;
+		font-weight: 100;
+		font-family: Lato;
+		color: #fff;
+		 font-family: Lato;
+		 font-family: 'Poiret One';
+		 letter-spacing: 30px;
+		text-transform: lowercase;
+}
+.front-banner-img img{
+	width: 100%;
+}
+.front-banner-img {
+	position: relative;
+}
+.front-banner-img .ovl{
+	width: 100%;
+    height: 330px;
+    background: #E1DECF;
+    position: absolute;
+    top: 112px;
+    z-index: -1;
+}
+.g-title {
+	color: #bb9c57;
+	font-size: 60px;
+	 font-family: 'Poiret One';
+	 font-weight: bold;
+	 text-decoration: underline;
+}
+.gandhi {
+	width: 100%;
+}
+.widht100 {
+	width: 100%;
+}
+.pl0 {
+	padding-left: 0;
+}
+
+@-webkit-keyframes bg-anim {
+	from {
+     background-position: 0% 0%;
+	}
+	to {
+     background-position: 100% 0%;
+	}
+}
+
+.elephant {
+	width: 80%;
+	display: block;
+	float: right;
+	
+}
+.holy-img {
+	background: url(../img/holy.jpg) center no-repeat;
+	width: 100%;
+	height: 1000px;
+	background-size: 100%;
+
+}
+.htxt {
+	position: absolute;
+    top: 50%;
+    left: 13%;
+    width: 430px;
+}
+.orng {
+	color: #ff6c00;
+}
+.green {
+	color: #00a500;
+}
+/*modal css*/
+.main-modal {
+width: 40%;
+    height: 400px;
+    background: #ddd;
+    top: 0;
+    left: 30%;
+    position: absolute;
+   	transform: translate(0%, -100%);
+
+}
+.show-modal {
+   	transform: translate(0%, 0%);
+
+}
+#m-content {
+	background: url(../img/panel.jpg);
+	width: 100%;
+	height:auto;
+	border: none;
+	position: relative;
+	margin-top: 100px;
+}
+#m-content .form-control{
+	background: none;
+	box-shadow: none;
+	font-size: 20px;
+	 font-family: 'Lato';
+}
+#m-content::before, #m-content::after {
+	right: 10%;
+    background: transparent url(../img/cable.png) 0 0 no-repeat;
+    position: absolute;
+    display: block;
+    height: 860px;
+    width: 30px;
+    content: "";
+    top: -825px;
+    z-index: 1;
+}
+ #m-content::after {
+	left: 10%;
+
+ }
+  #m-content .modal-footer{
+	padding-top: 0;
+	border:none;
+ }
+ .mt0 {
+ 	 margin-top: 0;
+ }
+ .font-poiret {
+ 	 font-family: 'Poiret One', Lato;
+ }
+  .font-lato {
+ 	 font-family: Lato;
+ }
+
+  .font-dancing {
+ 	 font-family: 'Dancing Script';
+ }
+ .mpr {
+ 	 font-size: 16px;
+ }
+.header {
+	height: 55px;
+	background: #e1decf;
+}
+.header .modal-btn {
+	border: 1px solid #c3c2bd;
+    padding: 8px 10px;
+    margin-top: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+    -webkit-transition: all .2s;
+    
+}
+.header .modal-btn:hover {
+	background: #ff6c00;
+	color: #fff;
+}
+.india-map img  {
+	 width: 100%;
+}
+.ftr {
+	 margin-right: 15px;
+    margin-top: 15px;
+}
+@media (max-width: 767px) {
+ .bg-color {
+ 	height: 300px;
+ }
+ .welcom-title {
+ 	font-size: 35px;
+ 	letter-spacing: 15px;
+ }
+ .india-title {
+ 	font-size: 100px;
+ 	letter-spacing: 13;
+ 	margin-bottom: -10px;
+ 	margin-top: 4px;
+ }
+ .front-banner-box {
+ 	height: 320px;
+ }
+ .g-title {
+ 	font-size: 40px;
+ }
+ .holy-img {
+ 	height: 280px;
+ }
+ .htxt {
+ 	left: 9%;
+ 	width: 160px;
+ }
+}

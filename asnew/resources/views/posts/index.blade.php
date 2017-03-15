@@ -3,8 +3,10 @@
 @section('content')
 
 <!-- there are banner -->
-<div class="container-flued overflow-hidden">
+ <div class="container-flued overflow-hidden">
 	<div class="main-img-box">
+	
+
 		<div class="cycle-slideshow"
 			  data-cycle-fx="scrollHorz" 
 		    data-cycle-timeout="200000"
@@ -20,30 +22,34 @@
 		<span id=next class="next">
 			<i class="glyphicon glyphicon-menu-right"></i>
 		</span>
-			<div class="slide-it img1"></div>
-			<div class="slide-it img2"></div>
-			<div class="slide-it img1"></div>
-			<div class="slide-it img1"></div>
+		@foreach($fronts as $front)
+			<div class="slide-it">
+				<img src="{{ asset($front->image)}}" alt="">
+			</div>
+		@endforeach
 			<span class="pager"></span>
 		</div>
-		<div class="overlay">
+		 <div class="overlay">
 			<h1 class="main-title text-shadow font-light">INCREDIBLE <span class="font-bold"> &nbsp; ASRAHA</span></h1>
 
 			<h1 class="anim-text">
 				<span class="tlt font-md" data-in-effect="bounceInDown">
 					<u class="texts">
-						<li class="text-shadow">A creative man is motivated by the desire to achieve, not by the desire to beat others.
+						@foreach($fronts as $front)
+						<li class="text-shadow">
+							{{ $front->body }}
  						</li>
-						<li class="text-shadow">Success is simple. Do what's right, the right way, at the right time.
- 						</li>
-						<li class="text-shadow">Sexiness is all about your personality, being genuine and confident, and being a good person.</li>
+ 						@endforeach
 					</u>
 				</span>
 			</h1>
 			<h1 class="down-angle"><a href="#page-down" class="a"><i class="icon-angle-down"></i></a></h1>
 		</div>
+
+
 	</div>
-</div> 
+</div>
+
 
 <!-- there are banner END-->
 {{-- blog --}}
@@ -68,7 +74,7 @@
 							</div>
 
 						@foreach($posts as $post)
-						<div class="col-md-6 mt50">
+						<div class="col-md-6 mt50  wow fadeInLeftBig">
 							<div class="row">
 								<div class="col-md-5">
 										<div class="por">
@@ -172,58 +178,38 @@
 
 			<div class="row">
 				  <div class="carousel slide" id="myCarousel">
-				    <div class="carousel-inner">
-				      <div class="item active">
+				    <div class="carousel-inner" id="innerblock">
+				@foreach($valuables as $valuable)
+				
+				    <div class="item">
 				        <div class="col-md-3">
 				               <div class="img-card">
 				            <div class="img-hover-box">
-				              <div class="card-image"></div>
+				              <div class="card-image">
+				              	<img src="{{ asset($valuable->image)}}" alt="">
+				              </div>
 				              <div class="this-overlay"></div>
 				              <div class="this-overlay2"></div>
 				              <div class="big-icon">+</div>
 				             <div class="overlay-text font-light">
 								<ul class="list-unstyled">
-									<li class="list-item"><a href="tel:7210562014"> <span class="curcle-call"><i class="glyphicon glyphicon-earphone">	</i></span> 7210562014</a>
+									<li class="list-item"><a href="tel:7210562014"> <span class="curcle-call"><i class="glyphicon glyphicon-earphone">	</i></span> {{$valuable->number}}</a>
 									</li>
-									<li class="list-item"><a href=""><span class="curcle-call"><i class="glyphicon glyphicon-envelope"></i></span> 7210562014</a></li>
+									
 								</ul>
 								
-				              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem asperiores, ut. Corporis quidem vel est perspiciatis, at commodi enim adipisci deleniti nihil veritatis obcaecati optio fugiat fugit voluptates molestias repudiandae?
+				             {{$valuable->massage}}
 				              </div>
 				            </div>
 				            <div 
 				            class="disc">
-				              <p class="cardname">lorem</p>
-				              <h4 class="m0">ipsum doller</h4>
+				              <h4 class="m0"> {{$valuable->name}}</h4>
 				            </div>
 				          </div>
 				        </div>
 				      </div>
-				      <div class="item">
-				        <div class="col-md-3">
-				           <div class="img-card">
-				            <div class="img-hover-box">
-				              <div class="card-image"></div>
-				              <div class="this-overlay"></div>
-				              <div class="this-overlay2"></div>
-				              <div class="big-icon">+</div>
-				              <div class="overlay-text font-light">
-								<ul class="list-unstyled">
-									<li class="list-item"><a href="tel:7210562014"> <span class="curcle-call"><i class="glyphicon glyphicon-earphone"></i></span> 7210562014</a>
-									</li>
-									<li class="list-item"><a href=""><span class="curcle-call"><i class="glyphicon glyphicon-envelope"></i></span> 7210562014</a></li>
-								</ul>
-								
-				              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem asperiores, ut. Corporis quidem vel est perspiciatis, at commodi enim adipisci deleniti nihil veritatis obcaecati optio fugiat fugit voluptates molestias repudiandae?
-				              </div>
-				            </div>
-				            <div class="disc">
-				              <p class="cardname">lorem</p>
-				              <h4 class="m0">ipsum doller</h4>
-				            </div>
-				          </div>
-				        </div>
-				      </div>
+				 @endforeach
+
 				    </div>
 				  </div>
 			</div>

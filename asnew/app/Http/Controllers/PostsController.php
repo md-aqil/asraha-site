@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Front;
+use App\valuable;
+
 class PostsController extends Controller
 {
     public function index()
     {
     	$posts = Post::latest()->get();
-
-    	return view('posts.index', compact('posts'));
+      $fronts = Front::all();
+      $valuables = valuable::all();
+    	return view('posts.index', compact('posts', 'fronts', 'valuables'));
     }
 
 
@@ -23,8 +27,10 @@ class PostsController extends Controller
 
      public function create()
       {
+         $valuables = valuable::all();
+         $fronts = Front::all();
         $posts = Post::all();
-      	return view('dashboard.create')->with(compact('posts'));
+      	return view('dashboard.create')->with(compact('posts','fronts', 'valuables'));
       }
 
      public function store() {
