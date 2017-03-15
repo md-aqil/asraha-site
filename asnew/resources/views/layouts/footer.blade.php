@@ -25,7 +25,6 @@
 		// initialDelay: 1000,
     	shuffle: true,
  	});
-	new WOW().init();
  	
 	$('.tabs-a').click(function(e) {
 		e.preventDefault();
@@ -94,26 +93,32 @@ $(".mobile-inner-nav a").each(function( index ) {
 });
 
 // multiple images slider
-$('#myCarousel').carousel({
-  interval: 20000
-})
 
-$('.carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  for (var i=0;i<2;i++) {
-    next=next.next();
-    if (!next.length) {
-    	next = $(this).siblings(':first');
-  	}
-    
-    next.children(':first-child').clone().appendTo($(this));
-  }
-});
+
+(function() {
+	if(!$('#myCarousel').length) return;
+	$('#myCarousel').carousel({
+	  interval: 20000
+	})
+	$('.carousel .item').each(function(){
+	  var next = $(this).next();
+	  if (!next.length) {
+	    next = $(this).siblings(':first');
+	  }
+	  next.children(':first-child').clone().appendTo($(this));
+	  
+	  for (var i=0;i<2;i++) {
+	    next=next.next();
+	    if (!next.length) {
+	    	next = $(this).siblings(':first');
+	  	}
+	    
+	    next.children(':first-child').clone().appendTo($(this));
+	  }
+	});
+})();
+
+
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
@@ -160,6 +165,7 @@ atvImg();
 <script>
 	window.onload = function() {
 		document.getElementById('main-wrapper').style.display = 'block';
+		return;
 		document.getElementById('preloader').style.display = 'none';
 	}
 </script>

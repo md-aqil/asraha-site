@@ -13,3 +13,11 @@ Route::get('/about', 'ValuableController@about');
 Route::get('/india', 'ValuableController@india');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
+	Route::get('/', 'AdminController@dashboard');
+});
