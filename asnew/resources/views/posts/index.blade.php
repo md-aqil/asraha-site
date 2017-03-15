@@ -277,56 +277,33 @@
 				<h1 class="title-header">Glarries</h1>
 				<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
 			<h1>&nbsp;</h1>
-				<div class="content-box">
-	<ul class="tabs-item clearfix">
-		<li class="col-md-3 "><a class="color-white tabs-a letter wow bounceInDown" data-wow-delay=".3s" href="#first" data-icon="icon-umbrella"></a><p class="">music icon</p></li>
-		<li class="col-md-3 "><a class="color-white tabs-a letter wow bounceInDown" href="#second" data-wow-delay=".4s" data-icon="icon-camera"></a><p class="">music icon</p></li>
-		<li class="col-md-3 "><a class="color-white tabs-a letter wow bounceInDown" href="#third" data-wow-delay=".5s" data-icon="icon-headphones"></a><p class="">music icon</p></li>
-		<li class="col-md-3 "><a class="color-white tabs-a letter wow bounceInDown" href="#fourth" data-wow-delay=".6s" data-icon="icon-music"></a><p class="">music icon</p></li>
-	</ul>
-	<div id="first" class="animated">
-		<div class="row">	
-			<div class="col-md-6">
-			<br>	
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-			<div class="col-md-6">
-			<br>	
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-		</div>	
-	</div>
-	
-	<div id="second" class="animated">
-	<div class="row">	
-			<div class="col-md-6">
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-			<div class="col-md-6">
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-		</div>	
-	</div>
-	
-	
-	<div id="third" class="animated">
-			<div class="col-md-6">
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-			<div class="col-md-6">
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-	</div>
-		<div id="fourth" class="animated">
-				<div class="col-md-6">
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-			<div class="col-md-6">
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt beatae, ut dolor! Nihil, commodi ipsum assumenda vero! Perferendis voluptas magni laboriosam cum aliquam, impedit facere, quae error deserunt nam.</p>
-			</div>
-		</div>
-	</div>
-	
+				<div class="glarries-tabbox">
+					<ul class="nav nav-tabs nav-pills" id="svg-icon">
+					    <li class="nav active"><a href="#Ab" data-toggle="tab">
+					    <img src="/img/hand-gesture.svg" alt="">
+					    Create a post</a>
+					    </li>
+					    <li class="nav"><a href="#ac" data-toggle="tab">
+					     <img src="/img/pictures.svg" alt="">
+					    Create front banner</a></li>
+					    <li class="nav"><a href="#C" data-toggle="tab">
+					    <img src="/img/manager.svg" alt="">
+					    Creat Valuable leaders</a></li>
+					</ul>
+					<div class="tab-content">
+					    <div class="tab-pane fade in active" id="Ab">
+					    	<div class="segment">
+					    	this is tab
+					    	</div>
+					    </div>
+					      <div class="tab-pane fade" id="ac">
+					    	<div class="segment">
+					    	this is tab
+					    	</div>
+					    </div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	{{-- another END --}}

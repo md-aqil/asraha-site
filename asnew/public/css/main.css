@@ -193,30 +193,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1p
   object-fit: cover;
 
 }
-	.tabs-item li {
-		display: inline-block;
-		 text-align: center;
-	}
-	.tabs-item li a:hover {
-	 	color: #00B4F1;
-	 	text-decoration: none;
-	}
-	.tabs-item li a:focus {
-		text-decoration: none;
-	}
-
-	.tabs-item li:first-child {
-		margin-left: 0;
-
-	}
-	.content-box {
-		width: 100%;
-		min-height: 300px;
-
-	}
-.icon-big {
-	font-size: 50px;
-}
+	
 .some {
 	border-bottom: 2px solid  #00B4F1;
 }
@@ -293,69 +270,6 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1p
 }
 /* stylishtext */
 
-
-.letter{
-  display: inline-block;
-  font-weight: 900;
-  font-size: 40px;
-  position: relative;
-  color: #00B4F1;
-  transform-style: preserve-3d;
-  perspective: 400;
-  z-index: 1;
-  line-height: 1em;
-}
-.letter .before, .letter .after{
-  position:absolute;
-  content: attr(data-letter);
-  transform-origin: top left;
-  top:0px;
-  left:0;
-}
-.letter, .letter .main, .letter .before, .letter .after{
-  transition: all 0.3s ease-in-out;
-}
-.letter .before{
-  color: #F5F5FA;
-  text-shadow: 
-    -1px 0px 1px rgba(255,255,255,.8),
-    1px 0px 1px rgba(0,0,0,.8);
-  z-index: 3;
-  transform:
-    rotateX(0deg)
-    rotateY(-15deg)
-    rotateZ(0deg);
-}
-
-
-
-.letter .after{
-  color: rgba(0,0,0,.11);
-  z-index:2;
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg,1deg);
-}
-
-.letter:hover .before{
-  color: #fafafa;
-  transform:
-    rotateX(0deg)
-    rotateY(-40deg)
-    rotateZ(0deg);
-}
-
-.letter:hover .after{
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(40deg)
-    rotateZ(0deg)
-    skew(0deg,22deg);
-}
 .color-white .before{
 	color: #fff;
 }
@@ -1113,4 +1027,27 @@ a.text-black {
 .side-posts .media a {
   color: #646FB0;
   font-weight: 600;
+}
+
+.glarries-tabbox .nav.active  {
+  border: none;
+    background: none;
+
+}
+.glarries-tabbox .nav.active a:focus {
+  background: none;
+  border:none;
+}
+
+.glarries-tabbox .nav.active a {
+  border-width: 0;
+    background: none;
+    border-bottom: 2px solid #000 !important;
+    border-radius: 0;
+    color: #000 !important;
+}
+.glarries-tabbox .nav.active a:hover {
+  background: none;
+  border:none;
+  border-bottom: 2px solid #000;
 }
