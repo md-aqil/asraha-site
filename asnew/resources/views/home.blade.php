@@ -8,7 +8,8 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <h4 class="pull-left">You are logged in!</h4>
+                  <a href="/" class="btn btn-success pull-right">Got to home</a>
                 </div>
             </div>
         </div>

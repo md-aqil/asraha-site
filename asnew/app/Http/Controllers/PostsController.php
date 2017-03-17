@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Front;
 use App\valuable;
-
+use App\Gallery;
 class PostsController extends Controller
 {
     public function index()
@@ -14,7 +14,8 @@ class PostsController extends Controller
     	$posts = Post::latest()->get();
       $fronts = Front::all();
       $valuables = valuable::all();
-    	return view('posts.index', compact('posts', 'fronts', 'valuables'));
+      $galleries = Gallery::all();
+    	return view('posts.index', compact('posts', 'fronts', 'valuables', 'galleries'));
     }
 
 
@@ -30,10 +31,12 @@ class PostsController extends Controller
          $valuables = valuable::all();
          $fronts = Front::all();
         $posts = Post::all();
-      	return view('dashboard.create')->with(compact('posts','fronts', 'valuables'));
+       $galleries = Gallery::all();
+       return $galleries;
+      	return view('dashboard.create')->with(compact('posts','fronts', 'valuables', 'galleries'));
       }
 
-     public function store() {
+     public function store(Request $req) {
    		
    		// $post->save();
       $path = null;

@@ -35,6 +35,9 @@
 				        <li class="nav"><a href="#C" data-toggle="tab">
 				        <img src="/img/manager.svg" alt="">
 				        Creat Valuable leaders</a></li>
+				         <li class="nav"><a href="#D" data-toggle="tab">
+				        <img src="/img/manager.svg" alt="">
+				        Creat Gallery</a></li>
 				    </ul>
 				</div>
 			</div>
@@ -143,7 +146,7 @@
 				    	</div>
 				    </div>
 
-				    <div class="tab-pane fade" id="C">
+			<div class="tab-pane fade" id="C">
 				    <h1>Creat Valuable leaders and about him</h1>
 				    <div class="segment">
 				    	<form method="POST" action="/valuable" enctype="multipart/form-data">
@@ -181,6 +184,37 @@
 				    	</div>
 
 				    </div>
+
+				    <div class="tab-pane fade" id="D">
+				    	    <h1>Creat Valuable leaders and about him</h1>
+				    	    <div class="segment">
+				    	    	<form method="POST" action="/gallery" enctype="multipart/form-data">
+				    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+				    	    	
+				    	    			<div class="form-group clearfix segment">
+				    	    				<input type="file" name="gallery-image" class="pull-left" required>
+				    	    				<button class="btn btn-primary pull-right">Publish</button>
+				    	    			</div>
+				    	    		</form>
+				    	    </div>
+				    			
+				    			<div class="imdlt">
+				    	    		<div class="row">
+				    	    		@foreach($valuables as $valuable)
+				    	    		  <div class="col-md-3">
+				    	    		    <a href="#" class="thumbnail clearfix text-black">
+				    	    		   {{$valuable->number}}
+				    	    		        <button class="badge danger pull-right">X</button>
+				    	    				<img src="{{ asset($valuable->image)}}" alt="">
+				    	    				<p class="">{{$valuable->massage}}</p>
+				    	    		    </a>
+				    	    		  </div>
+				    	    		@endforeach
+				    	    		</div>
+				    	    			
+				    	    	</div>
+
+				    	    </div>
 				</div>
 			</div>
 		</div>

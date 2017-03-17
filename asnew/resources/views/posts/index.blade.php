@@ -220,7 +220,7 @@
 
 {{-- slider end--}}
 
-	<div class="container overflow-hidden">
+	<div class="container">
 		<h3>&nbsp;</h3>
 		<h2 class="title-header text-center">Services Provided</h2>
 		<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
@@ -228,36 +228,36 @@
 		<div class="service-box">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="wow bounceInLeft" data-wow-delay=".2s">
+					<div class="">
 						<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
 							<h3 class="text-center">lorem</h3>
 						<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
 									
 					</div>
 				</div>
-				<div class="col-md-4 wow bounceInDown" data-wow-delay=".6s">
+				<div class="col-md-4" >
 				<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
 	
 					<h3 class="text-center">lorem</h3>
 					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
 				</div>
-				<div class="col-md-4 wow rotate bounceInRight" data-wow-delay=".3s">
+				<div class="col-md-4 wow rotate bounceInRight" >
 					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
 					<h3 class="text-center">lorem</h3>
 					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
 				</div>
-				<div class="col-md-4 wow  fadeInDown" data-wow-delay=".6s">
+				<div class="col-md-4 wow  fadeInDown" >
 					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
 					<h3 class="text-center">lorem</h3>
 					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
 				</div>
-				<div class="col-md-4 wow fadeInDown" data-wow-delay=".7s">
+				<div class="col-md-4 wow fadeInDown" >
 					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
 					<h3 class="text-center">lorem</h3>
 					<p class="text-center">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
 				</div>
-				<div class="col-md-4 wow fadeInDown" data-wow-delay=".8s">
+				<div class="col-md-4 wow fadeInDown" >
 					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
 					<h3 class="text-center">lorem</h3>
 					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
@@ -272,67 +272,23 @@
 	{{-- another --}}
 
 		<div class="container">
+			<div class="spacebox">
+			<h2 class="title-header text-center">Gallery</h2>
+				<div class="text-center  hidden-sm hidden-xs"><img src="img/line.png" alt=""></div>
+			</div>
 			<div class="apporch-box">
-			<h5>&nbsp;</h5>
-				<h1 class="title-header">Glarries</h1>
-				<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
-			<h1>&nbsp;</h1>
-				<div class="glarries-tabbox">
-					<ul class="nav nav-tabs nav-pills" id="svg-icon">
-					    <li class="nav active"><a href="#Ab" data-toggle="tab">
-					    <img src="/img/hand-gesture.svg" alt="">
-					    Create a post</a>
-					    </li>
-					    <li class="nav"><a href="#ac" data-toggle="tab">
-					     <img src="/img/pictures.svg" alt="">
-					    Create front banner</a></li>
-					    <li class="nav"><a href="#C" data-toggle="tab">
-					    <img src="/img/manager.svg" alt="">
-					    Creat Valuable leaders</a></li>
-					</ul>
-					<div class="tab-content">
-					    <div class="tab-pane fade in active" id="Ab">
-					    	<div class="segment">
-					    	this is tab
-					    	</div>
-					    </div>
-					      <div class="tab-pane fade" id="ac">
-					    	<div class="segment">
-					    	this is tab
-					    	</div>
-					    </div>
-
+				<div>
+					<div class="segment">
+					@foreach($galleries as $gallery)
+					 <a href="#" class="thumbnail _thmb">
+						<img  src="{{ asset($gallery->image)}}">
+						</a>
+					@endforeach
 					</div>
 				</div>
 			</div>
 		</div>
 	{{-- another END --}}
-
-	<div class="container-fluid">
-		<div class="row">
-			<div class="pointer-box">
-				<div class="">
-					<div class="cycle-slideshow multipule-img-slider" 
-					    data-cycle-fx="carousel"
-					    data-cycle-timeout="2000"
-					    data-cycle-carousel-visible="4"
-					    data-cycle-carousel-fluid="true"
-					    >
-					   <img class="" src="img/Green-Nature-Trees-l.jpg" alt="">
-					   <img class="" src="img/Green-Nature-Trees-l.jpg" alt="">
-					   <img class="" src="img/Green-Nature-Trees-l.jpg" alt="">
-					   <img class="" src="img/Green-Nature-Trees-l.jpg" alt="">
-					   <img class="" src="img/Green-Nature-Trees-l.jpg" alt="">
-					</div>
-				</div>
-				<h1>&nbsp;</h1>
-			</div>
-			
-		</div>
-	</div>
-		<div id="page-1"></div>
-	
-	<br>	
 
 	{{-- contact us --}}
 
@@ -349,7 +305,7 @@
 	        <div class="col-md-6"> 
 	         	<ul class="contacts-list">
 	
-	         		<li class="clearfix wow bounceInLeft" data-wow-delay=".2s">
+	         		<li class="clearfix " >
 	         			<div class="r-box pull-left">
 	         				<span class="letter" data-icon="glyphicon glyphicon-earphone"></span>
 	         			</div>
@@ -359,7 +315,7 @@
 	         				
 	         			</div>
 	         		</li>
-	         		<li class="clearfix wow bounceInLeft" data-wow-delay=".5s">
+	         		<li class="clearfix " >
 	         			<div class="r-box pull-left">
 	         				<span class="letter" data-icon="glyphicon glyphicon-envelope"></span>
 	         			</div>
@@ -369,7 +325,7 @@
 	         				
 	         			</div>
 	         		</li>
-	         		<li class="clearfix wow bounceInLeft" data-wow-delay=".8s">
+	         		<li class="clearfix " >
 	         			<div class="r-box pull-left">
 						<span class="letter" data-icon="glyphicon glyphicon-map-marker"></span>
 	         			</div>
@@ -387,17 +343,17 @@
 	                  <br>
 	                </div>
 	                <form class="form-modal"  action="send-mail.php">
-	                  <div class="form-group por wow fadeInLeftBig" data-wow-delay=".3s">      
+	                  <div class="form-group por wow fadeInLeftBig" >      
 	                    <input class="form-control material-input" type="text" required >
 	                    <span class="bar"></span>
 	                    <label class="material-label">Name</label>
 	                  </div>
-	                    <div class="form-group por fadeInLeftBig wow" data-wow-delay=".6s">      
+	                    <div class="form-group por fadeInLeftBig wow" >      
 	                        <input class="form-control material-input" type="text" required >
 	                        <span class="bar"></span>
 	                      <label class="material-label">Name</label>
 	                  </div>
-	                    <div class="form-group por fadeInLeftBig" data-wow-delay=".9s">      
+	                    <div class="form-group por fadeInLeftBig" >      
 	                    <textarea class="form-control material-input "  type="text" name="" id="" rows="3" required ></textarea>
 	                        <span class="bar"></span>
 	                      <label class="material-label textarea">Name</label>

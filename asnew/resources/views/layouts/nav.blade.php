@@ -3,13 +3,15 @@
 		<div class="row">
 			<div class="header animated">
 				<div class="container">
-				<h1 class="pull-left asraha-logo text-shadow"><a href="index.php"><img src="{{ asset('img/logoio.png') }}" alt=""></a></h1>
+				<h1 class="pull-left asraha-logo text-shadow"><a href="/"><img src="{{ asset('img/logoio.png') }}" alt=""></a></h1>
 					<ul class="nav-ul">
 						<li><a href="/">Home</a></li>
 						<li><a href="">News feed</a></li>
 						<li><a href="/india">About India</a></li>
 						<li><a href="">Asraha info</a></li>
 						<li><a href="/about">About us</a></li>
+						
+
 						 @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
@@ -35,6 +37,9 @@
                             </li>
                         @endif
 					</ul>
+
+
+
 			</div>
 				</div>
 		</div>
