@@ -14,7 +14,9 @@ class AdminController extends Controller
     	$posts = Post::all();
     	$fronts = \App\Front::all();
     	$valuables = \App\Valuable::all();
-    	return view('dashboard.create')->with(compact('posts', 'fronts','valuables'));
+        $galleries = \App\Gallery::all();
+
+    	return view('dashboard.create')->with(compact('posts', 'fronts','valuables','galleries'));
     	return 'passed';
     }
 }

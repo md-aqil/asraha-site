@@ -26,16 +26,7 @@ class PostsController extends Controller
 
 
 
-     public function create()
-      {
-         $valuables = valuable::all();
-         $fronts = Front::all();
-        $posts = Post::all();
-       $galleries = Gallery::all();
-       return $galleries;
-      	return view('dashboard.create')->with(compact('posts','fronts', 'valuables', 'galleries'));
-      }
-
+    
      public function store(Request $req) {
    		
    		// $post->save();
@@ -58,4 +49,31 @@ class PostsController extends Controller
       $image->move(public_path() . '/img/blog', $name . '.' . $ext );
       return "/img/blog/{$name}.{$ext}";
     }
+
+
+      public function getDeletePost($post_id)
+    {
+       $post = Post::find($post_id)->first();
+       $post->delete();
+       // return redirect()->route('blogs.index')
+       return back()->with('success', 'Your post has been deleted!');
+    }
+
+    function deleteFront($id) {
+       $front = Front::find($id)->first();
+       $front->delete();
+       return back()->with('success', 'Your post has been deleted!');
+    } 
+    function deletevaluable($id) {
+       $valuable = valuable::find($id)->first();
+       $valuable->delete();
+       return back()->with('success', 'Your post has been deleted!');
+    }
+
+     function deletegallery($id) {
+       $gallery = Gallery::find($id)->first();
+       $gallery->delete();
+       return back()->with('success', 'Your post has been deleted!');
+    }
+
 }

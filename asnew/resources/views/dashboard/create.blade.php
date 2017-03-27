@@ -82,8 +82,8 @@
 				    				<div class="panel-heading">
 				    					<div class="rmv-blog pull-right">
 				    					
-				    						<button class="btn btn-danger btn-sm"  title="Alert" data-toggle="popover"
-				    						data-placement="top"><i class="glyphicon glyphicon-trash"></i></button>
+					<a href="{{ route('post.delete', $post->id) }} " class="btn btn-danger btn-sm"  title="Alert" data-toggle="popover"
+					data-placement="top"><i class="glyphicon glyphicon-trash"></i></a>
 
 				    							<button class="btn btn-sm blue" href="#" class="blue">
 				    						<i class="glyphicon glyphicon-pencil"></i></button>
@@ -129,16 +129,15 @@
 				    		<div class="row">
 				    		@foreach($fronts as $front)
 				    		  <div class="col-md-3">
-				    		    <a href="#" class="thumbnail clearfix">
+				    		    <a href="{{ route('front.delete', $front->id) }} " class="thumbnail clearfix">
 				    		        <button class="badge danger pull-right">X</button>
 				    				<img src="{{ asset($front->image)}}" alt="">
+				    				<div class="caption">
+				    				 {{ $front->body }}
+				    					
+				    				</div>
 				    		    </a>
-				    		    <ul class="list-group">
-				    		      <li class="list-group-item">
-				    		        <button class="badge danger">X</button>
-				    		        {{ $front->body }}
-				    		      </li>
-				    		    </ul>
+				    		  
 				    		  </div>
 				    		@endforeach
 				    		</div>
@@ -171,7 +170,7 @@
 				    		<div class="row">
 				    		@foreach($valuables as $valuable)
 				    		  <div class="col-md-3">
-				    		    <a href="#" class="thumbnail clearfix text-black">
+				    		    <a href="{{ route('valuable.delete', $valuable->id) }}" class="thumbnail clearfix text-black">
 				    		   {{$valuable->number}}
 				    		        <button class="badge danger pull-right">X</button>
 				    				<img src="{{ asset($valuable->image)}}" alt="">
@@ -186,7 +185,7 @@
 				    </div>
 
 				    <div class="tab-pane fade" id="D">
-				    	    <h1>Creat Valuable leaders and about him</h1>
+				    	    <h1>Creat Gallery</h1>
 				    	    <div class="segment">
 				    	    	<form method="POST" action="/gallery" enctype="multipart/form-data">
 				    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -200,16 +199,16 @@
 				    			
 				    			<div class="imdlt">
 				    	    		<div class="row">
-				    	    		@foreach($valuables as $valuable)
-				    	    		  <div class="col-md-3">
-				    	    		    <a href="#" class="thumbnail clearfix text-black">
-				    	    		   {{$valuable->number}}
-				    	    		        <button class="badge danger pull-right">X</button>
-				    	    				<img src="{{ asset($valuable->image)}}" alt="">
-				    	    				<p class="">{{$valuable->massage}}</p>
-				    	    		    </a>
-				    	    		  </div>
-				    	    		@endforeach
+					    	    		@foreach($galleries as $gallery)
+					    	    		  <div class="col-md-3">
+					    	    		    <a href="{{ route('gallery.delete', $gallery->id) }}" class="thumbnail clearfix text-black">
+					    	    		  
+					    	    		        <button class="badge danger pull-right">X</button>
+					    	    				<img  src="{{ asset($gallery->image)}}">
+					    	    				
+					    	    		    </a>
+					    	    		  </div>
+					    	    		@endforeach
 				    	    		</div>
 				    	    			
 				    	    	</div>
@@ -223,3 +222,4 @@
 </div>
 
 @endsection
+

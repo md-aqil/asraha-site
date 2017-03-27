@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- there are banner -->
- <div class="container-flued overflow-hidden">
+<div class="container-flued overflow-hidden">
 	<div class="main-img-box">
 	
 
@@ -219,55 +219,6 @@
 </div>
 
 {{-- slider end--}}
-
-	<div class="container">
-		<h3>&nbsp;</h3>
-		<h2 class="title-header text-center">Services Provided</h2>
-		<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
-		<h1>&nbsp;</h1>
-		<div class="service-box">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="">
-						<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
-							<h3 class="text-center">lorem</h3>
-						<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
-									
-					</div>
-				</div>
-				<div class="col-md-4" >
-				<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
-	
-					<h3 class="text-center">lorem</h3>
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
-				</div>
-				<div class="col-md-4 wow rotate bounceInRight" >
-					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
-					<h3 class="text-center">lorem</h3>
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
-				</div>
-				<div class="col-md-4 wow  fadeInDown" >
-					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
-					<h3 class="text-center">lorem</h3>
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
-				</div>
-				<div class="col-md-4 wow fadeInDown" >
-					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
-					<h3 class="text-center">lorem</h3>
-					<p class="text-center">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
-				</div>
-				<div class="col-md-4 wow fadeInDown" >
-					<p class="text-center"><i class="glyphicon glyphicon-music service-icon"></i></p>
-					<h3 class="text-center">lorem</h3>
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam id molestias obcaecati optio. Nesciunt quisquam aperiam numquam earum iusto explicabo quod id iure. Quasi temporibus dolore assumenda magnam, officia?</p>
-				</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div><!-- container -->
-	<hr>
 
 	{{-- another --}}
 

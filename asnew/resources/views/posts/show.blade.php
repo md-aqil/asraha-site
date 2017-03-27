@@ -111,135 +111,25 @@
 			</div>
 
 			<div class="row">
+			@foreach($posts as $post)
 				<div class="col-md-4">
 					<div class="panel panel-default panel-blog">
-					<div class="panel-heading"><img class="width100" src="img/Green-Nature-Trees-l.jpg" alt=""></div>
+					<div class="panel-heading"><img class="width100" src="{{ asset($post->image)}}" alt=""></div>
 					  <div class="panel-body">
 						  <div>
-						 	 	<h4 class="">lorem ipsum doller sit ammet</h4>
-						  		<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
+						 	 	<h4 class=""><a href="/posts/{{$post->id}}">{{ $post->title }}</a></h4>
+						  		<p class="text-muted">{{$post->created_at->toFormattedDateString() }} | {{ $post->author }}</p>
 						  </div>
 						  <hr class="styled">
 						<p class="">
-							As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							{{ $post->body }}
 							</p>
 					  </div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="panel panel-default panel-blog">
-					<div class="panel-heading"><img class="width100" src="img/Green-Nature-Trees-l.jpg" alt=""></div>
-					  <div class="panel-body">
-						  <div>
-						 	 	<h4 class="">lorem ipsum doller sit ammet</h4>
-						  		<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
-						  </div>
-						  <hr class="styled">
-						<p class="">
-							As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="panel panel-default panel-blog">
-					<div class="panel-heading"><img class="width100" src="img/Green-Nature-Trees-l.jpg" alt=""></div>
-					  <div class="panel-body">
-						  <div>
-						 	 	<h4 class="">lorem ipsum doller sit ammet</h4>
-						  		<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
-						  </div>
-						  <hr class="styled">
-						<p class="">
-							As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-					  </div>
-					</div>
-				</div>
+				@endforeach
 			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="panel panel-default panel-blog">
-					<div class="panel-heading"><img class="width100" src="img/asraha1.jpg" alt=""></div>
-					  <div class="panel-body">
-						  <div>
-						 	 	<h4 class="">lorem ipsum doller sit ammet</h4>
-						  		<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
-						  </div>
-						  <hr class="styled">
-						<p class="">
-							As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="panel panel-default panel-blog">
-					<div class="panel-heading"><img class="width100" src="img/Green-Nature-Trees-l.jpg" alt=""></div>
-					  <div class="panel-body">
-						  <div>
-						 	 	<h4 class="">lorem ipsum doller sit ammet</h4>
-						  		<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
-						  </div>
-						  <hr class="styled">
-						<p class="">
-							As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="panel panel-default panel-blog">
-					<div class="panel-heading"><img class="width100" src="img/Green-Nature-Trees-l.jpg" alt=""></div>
-					  <div class="panel-body">
-						  <div>
-						 	 	<h4 class="">lorem ipsum doller sit ammet</h4>
-						  		<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
-						  </div>
-						  <hr class="styled">
-						<p class="">
-							As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-					  </div>
-					</div>
-				</div>
-			</div>
+			
 		</div>	
 		<h1>&nbsp;</h1>
 	</div>

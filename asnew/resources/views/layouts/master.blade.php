@@ -22,15 +22,15 @@
 	@include('layouts.footer')
 
 <script>
-var elem =
-    'Are You Sure You watn to delete this'+
-    ' <button type="button" class="btn btn-danger">Yes</button>';
+	// var elem =
+	//     'Are You Sure You watn to delete this'+
+	//     ' <a href="" type="button" class="btn btn-danger">Yes</a>';
 
-	$(function () {
-  $('[data-toggle="popover"]').popover({animation:true, content:elem, html:true});
-})
+	// 	$(function () {
+	//   $('[data-toggle="popover"]').popover({animation:true, content:elem, html:true});
+	// })
 
-	$('#innerblock .item:first').addClass('active');
+		$('#innerblock .item:first').addClass('active');
 
 
 </script>
