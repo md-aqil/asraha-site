@@ -23,7 +23,7 @@
 					<div class="col-md-8">
 						<div class="">
 							<h4 class="head-name">{{ $post->title }}</h4>
-							<p class="text-muted">{{$post->created_at->toFormattedDateString() }} | &nbsp; Mukhya of Ashraha</p>
+							<p class="text-muted">{{$post->created_at->toFormattedDateString() }}  &nbsp; | &nbsp; {{ $post->author }}</p>
 							<div class="lstsn">
 								<img  src="{{ asset($post->image)}}">
 							</div>
@@ -44,7 +44,7 @@
 							</div>
 							@if(session('success'))
 								<div class="alert alert-danger">{{ session('success') }}
-								
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 								</div>
 							@endif
 							@include ('layouts.errors')
