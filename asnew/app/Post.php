@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Auth;
 class Post extends Model
 {
    public function comments()
@@ -13,6 +13,8 @@ class Post extends Model
 
    public function addComment($body)
    {
-   	$this->comments()->create(compact('body'));
+   	$user_id = Auth::id();
+   	// dd($user_id);
+   	$this->comments()->create(compact('body', 'user_id'));
    }
 }
