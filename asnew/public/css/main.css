@@ -252,7 +252,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1p
 	    display: block;
     bottom: 20px;
     z-index: 300;
-    width: 112px;
+    /*width: 112px;*/
     margin: 0 auto;
     position: relative;
     margin-top: -60px;
@@ -266,6 +266,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1p
 	margin: 10px 4px;
 	border-radius: 1px;
 	cursor: pointer;
+  color: transparent;
 }
 .cycle-pager-active {
 	color: #fff;
@@ -1109,5 +1110,5 @@ a.text-black {
   border-radius: 10px;
 }
 #myModal .modal-content img {
-  border-radius: 10px;
+  border-radius: 5px;
 }

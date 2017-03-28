@@ -15,7 +15,7 @@
 				<div class="sidebar sidebar-list">
 						<div class="ui card">
 								  <a class="image" href="#" id="bgwhite">
-								    <img class="dash-img" src="img/shriram-logo.jpg">
+								    <img class="dash-img" src="/img/aqil.jpg">
 								  </a>
 						  <div class="content">
 						    <a class="header" href="#">University of Hyderabad</a>
