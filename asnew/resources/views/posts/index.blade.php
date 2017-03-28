@@ -56,7 +56,7 @@
 <div class="container-fluid bg-gray">
 	<div class="row">
 		<h1>&nbsp;</h1>
-			<div class="container">
+			<div class="container" id="postlisting">
 					<div class="row">
 						<div class="col-md-12 clearfix">
 							<div class="row">
@@ -65,7 +65,7 @@
 										<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
 									</div>
 									<div class="col-md-3 hidden-xs">
-										<a href="/posts/1" class="modal-btn-round mt52 ripple">View All  <span style="font-size: 18px;"> &nbsp; &#8594;</span></a>
+										<a href="{{ route('posts.allposts')}}" class="modal-btn-round mt52 ripple">View All  <span style="font-size: 18px;"> &nbsp; &#8594;</span></a>
 									</div>
 									<div class="col-md-12">
 										<hr class="styled" style="border-color: #c1c1c1;">
@@ -74,7 +74,7 @@
 							</div>
 
 						@foreach($posts as $post)
-						<div class="col-md-6 mt50  wow fadeInLeftBig">
+						<div class="col-md-6 postindex">
 							<div class="row">
 								<div class="col-md-5">
 										<div class="por">
@@ -97,6 +97,7 @@
 								</div>
 							</div>
 						</div>
+
 					@endforeach
 
 
@@ -229,20 +230,29 @@
 			</div>
 			<div class="apporch-box">
 				<div>
-					<div class="segment">
+					<div class="segment segment-gallery">
 					@foreach($galleries as $gallery)
-					 <a href="#" class="thumbnail _thmb">
+					 <a href="{{ asset($gallery->image)}}" class="thumbnail _thmb">
 						<img  src="{{ asset($gallery->image)}}">
 						</a>
 					@endforeach
 					</div>
 				</div>
 			</div>
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog modal-lg">
+			    	  <span class="close-styled" data-dismiss="modal">&times;</span>
+			    <div class="modal-content">
+			    </div>
+			
+			  </div>
+			</div>
 		</div>
+
 	{{-- another END --}}
 
 	{{-- contact us --}}
-
+<h2>&nbsp;</h2>
 	<div class="container-fluid bg-gray">
 		<div class="container">
 			<div class="row">
@@ -318,18 +328,6 @@
 		</div>
 	</div>
 	{{-- contact us END--}}
-
-
-
-
-
-
-
-
-
-
-
-{{-- ======================================================================= --}}
 
 
 

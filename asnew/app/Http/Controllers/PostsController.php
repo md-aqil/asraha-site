@@ -18,6 +18,12 @@ class PostsController extends Controller
     	return view('posts.index', compact('posts', 'fronts', 'valuables', 'galleries'));
     }
 
+    public function allPosts()
+    {
+      $posts = Post::all();
+      return view('posts.postlist', compact('posts'));
+    }
+    
 
     public function show(Post $post) {
       $posts = Post::all();

@@ -5,7 +5,7 @@
 <div class="container-fluid bg-gray">
 	@if(session('success'))
 	<div class="alert alert-success">{{ session('success') }}
-	<a href="/" class="btn btn-success pull-right" style="margin-top: -5px;"> Visit Site</a>
+	<a href="/" class="btn btn-success pull-right" target="_blank" style="margin-top: -5px;"> Visit Site</a>
 	</div>
 	@endif
 	<div class="row">

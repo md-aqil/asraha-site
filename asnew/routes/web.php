@@ -6,6 +6,7 @@ Route::get('/', 'postsController@index');
 Route::get('/asrahainfo', function() {
 	return view('asrahainfo');
 })->name('asrahainfo');
+Route::get('all-posts', 'postsController@allPosts')->name('posts.allposts');
 Route::get('/posts/create', 'postsController@create');
 Route::post('/posts', 'postsController@store');
 Route::get('/posts/{post}', 'postsController@show');

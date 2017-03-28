@@ -16,6 +16,7 @@
 <script src="/js/carousel.js"></script>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/atvImg.js"></script>
+<script src="/js/gallery.js"></script>
 
 <script>
 	$(document).ready(function() {
@@ -168,4 +169,24 @@ atvImg();
 		return;
 		document.getElementById('preloader').style.display = 'none';
 	}
+</script>
+<script>
+(function() {
+$('.segment-gallery')
+	.find('a').click(openModal);
+	function openModal(e) {
+		e.preventDefault();
+		var modal = $('#myModal').modal('show');
+		var src = $(this).attr('href');
+		var img = $('<img />', {src: src});
+		console.log(src);
+		modal.find('.modal-content').html(img);
+	}
+})();
+(function() {
+
+	var postLength = $('#postlisting .postindex').each(function(i, item) {
+		if(i > 3) $(item).addClass('hidden')
+	})
+})();
 </script>
