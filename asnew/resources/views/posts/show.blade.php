@@ -42,6 +42,11 @@
 							<div class="form-group">
 					  		<button class="viewallbtn">Add Comment</button>
 							</div>
+							@if(session('success'))
+								<div class="alert alert-danger">{{ session('success') }}
+								
+								</div>
+							@endif
 							@include ('layouts.errors')
 						</form>
 				{{-- comment-form END --}}
@@ -60,6 +65,8 @@
 								      <h4 class="media-heading">Media heading</h4>
 								      <p class="text-muted timehuman">{{$comment->created_at->diffForHumans()}}</p>
 								      <p>{{ $comment->body }}</p>
+								      
+								      <a href="{{ route('comment.delete', $comment->id) }}">Delete</a>
 								    </div>
 								  </li>
 								@endforeach

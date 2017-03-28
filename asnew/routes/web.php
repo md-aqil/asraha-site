@@ -31,3 +31,4 @@ Route::get('/delete-post/{post_id}', 'PostsController@getDeletePost')->name('pos
 Route::get('/delete-banner/{id}', 'PostsController@deleteFront')->name('front.delete');
 Route::get('/delete-valuable/{id}', 'PostsController@deletevaluable')->name('valuable.delete');
 Route::get('/delete-gallery/{id}', 'PostsController@deletegallery')->name('gallery.delete');
+Route::get('/delete-comment/{id}', 'CommentsController@deletecomment')->name('comment.delete');

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>My Application</title>
+	
 	<link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/effect.css">

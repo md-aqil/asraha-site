@@ -15,4 +15,10 @@ class CommentsController extends Controller
 
     	return back();
     }
+
+     function deletecomment($id) {
+       $comment = Comment::find($id)->first();
+       $comment->delete();
+       return back()->with('success', 'Your Comment has been deleted!');
+    }
 }
