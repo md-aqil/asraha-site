@@ -571,83 +571,17 @@ background: none;
   position: relative;
 }
 .material-input {
-  border: none;
-  border-bottom: 1px solid #2185d0;
+  border-color: #2185d0;
   box-shadow: none;
-  border-radius: 0;
   background: transparent;
+  font-size: 18px;
+    color: #646fb0;
 }
 
 .hr-dashed {
 	margin-bottom: 0;
     border-color: #9c9c9c;
     border-style: dashed;
-}
-/* LABEL ======================================= */
-.material-label {
-     color: #868686;
-    font-size: 15px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-   left: -23px;
-    top: -10px;
-   transition: all 0.3s ease-in-out;
-}
-
-/* active state */
-.material-input:focus ~ .material-label, .material-input:valid ~ .material-label    {
-  /* top: -8px; */
-  font-size: 13px;
-  color: #333;
-   -webkit-transform: translateY(-17px);
-      transform: translateY(-17px);
-}
-
-/* BOTTOM BARS ================================= */
-.bar  { position:relative; display:block; width:100%; }
-.bar:before, .bar:after   {
-  content:'';
-  height:1px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:#2185d0; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%; 
-}
-
-/* active state */
-.material-input:focus ~ .bar:before, .material-input:focus ~ .bar:after {
-  width:50%;
-}
-
-.fz20 {
-  font-size: 20px;
-}
-
-/* active state */
-.material-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-  from { background:#2185d0; }
-  to  { width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-  from { background:#2185d0; }
-  to  { width:0; background:transparent; }
 }
 .contacts-list {
 	padding-left: 0;

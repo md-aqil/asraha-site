@@ -305,19 +305,16 @@
 	                </div>
 	                <form class="form-modal"  action="send-mail.php">
 	                  <div class="form-group por wow fadeInLeftBig" >      
-	                    <input class="form-control material-input" type="text" required >
-	                    <span class="bar"></span>
-	                    <label class="material-label">Name</label>
+	                    <input class="form-control material-input" type="text" required placeholder="Name">
+	                   
 	                  </div>
 	                    <div class="form-group por fadeInLeftBig wow" >      
-	                        <input class="form-control material-input" type="text" required >
-	                        <span class="bar"></span>
-	                      <label class="material-label">Name</label>
+	                        <input class="form-control material-input" type="text" required placeholder="Email">
+	                       
 	                  </div>
 	                    <div class="form-group por fadeInLeftBig" >      
-	                    <textarea class="form-control material-input "  type="text" name="" id="" rows="3" required ></textarea>
-	                        <span class="bar"></span>
-	                      <label class="material-label textarea">Name</label>
+	                    <textarea class="form-control material-input "  type="text" name="" id="" rows="3" required placeholder="Type Your massege here"></textarea>
+	                      
 	                  </div>
 	              		<button class="modal-btn-round ripple">Submit</button>
 	                </form> 
