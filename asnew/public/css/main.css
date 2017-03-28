@@ -1104,3 +1104,10 @@ a.text-black {
 #postlisting .postindex{
   margin-top: 50px;
 }
+#myModal .modal-content{
+  border: 5px solid;
+  border-radius: 10px;
+}
+#myModal .modal-content img {
+  border-radius: 10px;
+}
