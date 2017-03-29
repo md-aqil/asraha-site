@@ -54,19 +54,18 @@
 						<hr>
 							<article>
 								<ul class="media-list">
-								@foreach($post->comments as $comment)
+								@foreach($comments as $comment)
 								  <li class="media">
 								    <div class="media-left">
-								      <a href="#">
-								        <img class="media-object" src="<img  src="{{ asset($post->image)}}" width="50" alt="">
-								      </a>
+										{{ substr($comment->user->name, 0, 2) }}
 								    </div>
 								    <div class="media-body">
-								      <h4 class="media-heading">Media heading</h4>
+								      <h4 class="media-heading">{{ $comment->user->name }}</h4>
 								      <p class="text-muted timehuman">{{$comment->created_at->diffForHumans()}}</p>
 								      <p>{{ $comment->body }}</p>
-								      
+								      @if(\Auth::id() == $comment->user_id)
 								      <a href="{{ route('comment.delete', $comment->id) }}">Delete</a>
+								      @endif
 								    </div>
 								  </li>
 								@endforeach

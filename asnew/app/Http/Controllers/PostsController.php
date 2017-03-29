@@ -27,7 +27,8 @@ class PostsController extends Controller
 
     public function show(Post $post) {
       $posts = Post::all();
-    	return view('posts.show', compact('post', 'posts'));
+      $comments = $post->comments()->with('user')->get();
+    	return view('posts.show', compact('post', 'posts', 'comments'));
     }
 
 
