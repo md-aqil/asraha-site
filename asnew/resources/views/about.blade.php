@@ -24,17 +24,32 @@
 					</p>
 				</div>
 				<div class="col-md-6">
-			<div class="cycle-slideshow img100 por bor" 
+			<div id="abt-slider" class="cycle-slideshow img100 por bor" 
 			    data-cycle-fx=scrollHorz
 			    data-cycle-timeout=10000
+			     data-cycle-prev="#prev"
+		 		data-cycle-next="#next"
 			    >
+			    <span id=prev class="prev">
+					<i class="glyphicon glyphicon-menu-left"></i>
+				</span>
+				<span id=next class="next">
+					<i class="glyphicon glyphicon-menu-right"></i>
+				</span>
 			    <!-- empty element for overlay -->
 			    <div class="cycle-overlay"></div>
-			    <img src="img/aqil-1.jpg" 
+			    <img src="img/aqil.jpg" 
 			        data-cycle-title="Spring" 
 			        data-cycle-desc="Sonnenberg Gardens">
 
 			    <img src="img/aqil-1.jpg" 
+			        data-cycle-title="Redwoods" 
+			        data-cycle-desc="Muir Woods National Monument">
+
+			          <img src="img/gandhi.jpg" 
+			        data-cycle-title="Redwoods" 
+			        data-cycle-desc="Muir Woods National Monument">
+			         <img src="img/holy.jpg" 
 			        data-cycle-title="Redwoods" 
 			        data-cycle-desc="Muir Woods National Monument">
 			</div>

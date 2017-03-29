@@ -11,12 +11,11 @@
 <script src="/js/jquery.fittext.js"></script>
 <script src="/js/jquery.lettering.js"></script>
 <script src="/js/jquery.textillate.js"></script>
-<script src="/js/wow.js"></script>
 <script src="/js/malsap.js"></script>
 <script src="/js/carousel.js"></script>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/atvImg.js"></script>
-<script src="/js/gallery.js"></script>
+
 
 <script>
 	$(document).ready(function() {

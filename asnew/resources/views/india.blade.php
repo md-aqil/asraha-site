@@ -42,7 +42,6 @@
 					<div class="atvImg-layer" data-img="img/gandhi.png"></div>
 					<div class="atvImg-layer" data-img="img/gandhi.png"></div>
 					<div class="atvImg-layer" data-img="img/gandhi.png"></div>
-
 				</div>
 			</div>
 		</div>

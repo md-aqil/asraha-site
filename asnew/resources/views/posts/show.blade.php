@@ -53,19 +53,20 @@
 						<div class="comment">
 						<hr>
 							<article>
-								<ul class="media-list">
+								<ul class="media-list ul_c">
 								@foreach($comments as $comment)
 								  <li class="media">
-								    <div class="media-left">
-										{{ substr($comment->user->name, 0, 2) }}
+								    <div class="media-left ">
+										<div class="user_label">{{ substr($comment->user->name, 0, 2) }}</div>
 								    </div>
 								    <div class="media-body">
+								       @if(\Auth::id() == $comment->user_id)
+								      <a href="{{ route('comment.delete', $comment->id) }}">Delete</a>
+								      @endif
 								      <h4 class="media-heading">{{ $comment->user->name }}</h4>
 								      <p class="text-muted timehuman">{{$comment->created_at->diffForHumans()}}</p>
 								      <p>{{ $comment->body }}</p>
-								      @if(\Auth::id() == $comment->user_id)
-								      <a href="{{ route('comment.delete', $comment->id) }}">Delete</a>
-								      @endif
+								   
 								    </div>
 								  </li>
 								@endforeach
