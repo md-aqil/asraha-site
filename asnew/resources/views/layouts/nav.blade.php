@@ -1,4 +1,4 @@
-<div id="main-wrapper" style="display:none">
+<div>
 <div class="container-fluid res-header-desktop hidden-sm hidden-xs">
 		<div class="row">
 			<div class="header animated">
@@ -8,7 +8,8 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="/india">About India</a></li>
 						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
-						<li><a href="/about">About us</a></li>
+                        <li><a href="/about">About us</a></li>
+						<li><a href="{{ route('templates.template') }}">Tamplates</a></li>
 						
 
 						 @if (Auth::guest())
@@ -58,7 +59,7 @@
 						<li><a href="/india">About India</a></li>
 						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
 						<li><a href="/about">About us</a></li>
-						
+						<li><a href="{{ route('templates.template') }}">Tamplates</a></li>
 
 						 @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>

@@ -38,4 +38,9 @@ class ValuableController extends Controller
     {
     	return view('india');
     }
+
+      public function templates() {
+   
+      return view('templates.template');
+    }
 }

@@ -15,7 +15,11 @@ Route::post('/fronts', 'FrontController@store');
 Route::post('/valuable', 'ValuableController@store');
 Route::post('/gallery', 'GalleryController@store');
 Route::get('/about', 'ValuableController@about');
+
 Route::get('/india', 'ValuableController@india');
+Route::get('/templates', 'ValuableController@templates')->name('templates.template');;
+
+Route::post('/winner', 'WinnerController@store');
 
 
 
@@ -31,4 +35,7 @@ Route::get('/delete-post/{post_id}', 'PostsController@getDeletePost')->name('pos
 Route::get('/delete-banner/{id}', 'PostsController@deleteFront')->name('front.delete');
 Route::get('/delete-valuable/{id}', 'PostsController@deletevaluable')->name('valuable.delete');
 Route::get('/delete-gallery/{id}', 'PostsController@deletegallery')->name('gallery.delete');
+
 Route::get('/delete-comment/{id}', 'CommentsController@deletecomment')->name('comment.delete');
+
+Route::get('/delete-winner/{id}', 'WinnerController@destroy')->name('winner.delete');

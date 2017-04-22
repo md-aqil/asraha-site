@@ -38,6 +38,9 @@
 				         <li class="nav"><a href="#D" data-toggle="tab">
 				        <img src="/img/manager.svg" alt="">
 				        Creat Gallery</a></li>
+				         <li class="nav"><a href="#E" data-toggle="tab">
+				        <img src="/img/manager.svg" alt="">
+				        Creat Winner</a></li>
 				    </ul>
 				</div>
 			</div>
@@ -212,6 +215,71 @@
 				    	    		</div>
 				    	    			
 				    	    	</div>
+
+				    	    </div>
+
+
+				    <div class="tab-pane fade" id="E">
+				    	    <h1>Creat Gallery</h1>
+				    	    <div class="segment">
+				    	    	<form method="POST" action="/winner" enctype="multipart/form-data">
+				    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+				    	    	
+				    	    			
+				    	    			<div class="form-group">
+				    	    				<input class="form-control" type="text" name="winner_name" placeholder="Winner Name">
+				    	    			</div>
+				    	    			<div class="from-group">
+				    	    					<input class="form-control" type="text" name="winner_msg" placeholder="Winner Massage">
+				    	    			</div>
+				    	    			<div class="form-group clearfix segment">
+
+				    	    				<input type="file" name="image" class="pull-left" required>
+				    	    				<button class="btn btn-primary pull-right">Publish</button>
+				    	    			</div>
+
+				    	    		</form>
+				    	    </div>
+    	<div class="">
+    		<div class="row">
+    			<div class="col-md-12">
+    			<h1>&nbsp;</h1>
+    			<h1 class="title-header text-left">Area News</h1>
+    			<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
+    			<hr class="styled" style="border-color: #c1c1c1;">
+    			</div>
+    		</div>
+
+    		<div class="row">
+    		@foreach($winners as $winner)
+    			<div class="col-md-4">
+    				<div class="panel panel-default panel-blog">
+    				<div class="panel-heading">
+    					<div class="rmv-blog pull-right">
+    					
+							<a href="{{ route('winner.delete', $winner->id) }} " class="btn btn-danger btn-sm"  title="Alert" data-toggle="popover"
+							data-placement="top"><i class="glyphicon glyphicon-trash"></i></a>
+    						
+    					</div>
+
+    				<img class="pimg" src="{{ asset($winner->image)}}" alt="">
+    				</div>
+    				  <div class="panel-body">
+    					  <div>
+    					 	 	<h4 class="">{{ $winner->winner_name }}</h4>
+    					  		<p class="text-muted">{{$winner->created_at->toFormattedDateString() }} &nbsp; | &nbsp; From Asraha</p>
+    					  </div>
+    					  <hr class="styled">
+    					<p class="">
+    						{{ $winner->winner_msg }}
+    						</p>
+    				  </div>
+    				</div>
+    			</div>
+    			@endforeach
+    		</div>
+    		
+    	</div>
 
 				    	    </div>
 				</div>

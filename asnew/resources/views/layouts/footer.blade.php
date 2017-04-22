@@ -15,6 +15,9 @@
 <script src="/js/carousel.js"></script>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/atvImg.js"></script>
+<script src="/js/pinterest_grid.js"></script>
+
+<script src="/js/Websnowjq.js"></script>
 
 
 <script>
@@ -161,14 +164,6 @@ atvImg();
 </script>
 <!-- for ripple effec  End-->
 
-
-<script>
-	window.onload = function() {
-		document.getElementById('main-wrapper').style.display = 'block';
-		return;
-		document.getElementById('preloader').style.display = 'none';
-	}
-</script>
 <script>
 (function() {
 $('.segment-gallery')
@@ -188,4 +183,19 @@ $('.segment-gallery')
 		if(i > 3) $(item).addClass('hidden')
 	})
 })();
+
+
+ $(document).ready(function() {
+
+            $('#blog-landing').pinterest_grid({
+                no_columns: 3,
+                padding_x: 10,
+                padding_y: 10,
+                margin_bottom: 50,
+                single_column_breakpoint: 700
+            });
+
+        });
+// $("#divSnow").websnowjq();
+
 </script>

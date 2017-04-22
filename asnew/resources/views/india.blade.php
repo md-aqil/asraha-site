@@ -71,7 +71,7 @@
 				</p>
 			</div>
 			<div class="col-md-6 pl0">
-				<div class="atvImg pull-right no-shadow" style="width: 80%; height: 500px">
+				<div class="atvImg pull-right no-shadow _elph">
 				<img class="elephant" src="img/elephant.png" alt="">
   					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
   					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
@@ -114,7 +114,7 @@
 				</p>
 			</div>
 			<div class="col-md-6">
-					<div class="atvImg no-shadow pull-right" style="width: 80%; height: 400px;">
+					<div class="atvImg no-shadow pull-right _tgr" >
 				<img class="elephant" src="img/tiger.png" alt="">
   						 <div class="atvImg-layer" data-img="img/tiger.png"></div>
   						 <div class="atvImg-layer" data-img="img/tiger.png"></div>
@@ -125,13 +125,20 @@
 		</div>
 	</div>
 
-	<div class="container-fluid">
+
+	<div>
+<div class="container-fluid" >
 		<div class="row">
+			<div class="front-banner-box-taj">
+			<!-- <div class="front-banner-img"></div> -->
 			<img class="img-responsive" src="img/taj.jpg" alt="">
+		
+		<div class="front-banner-overlay" id="divSnow">
+		</div>
+	</div>
 		</div>
 	</div>
 	
-	<div >
 			
 		<div id="myModal" class="modal fade" role="dialog">
 		  <div class="modal-dialog modal-lg">

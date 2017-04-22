@@ -33,11 +33,15 @@
 
 		$('#innerblock .item:first').addClass('active');
 		$('#carouselExampleControls .carousel-item:first').addClass('active');
-$('.carousel').carousel();
+		$('.carousel').carousel();
+
+
 
 </script>
 <script>
 	
+
+        
 </script>
 </body>
 </html>

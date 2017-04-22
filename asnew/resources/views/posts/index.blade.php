@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!-- there are banner -->
+
 <div class="container-flued overflow-hidden">
 	<div class="main-img-box">
 	
@@ -23,13 +23,14 @@
 			<i class="glyphicon glyphicon-menu-right"></i>
 		</span>
 		@foreach($fronts as $front)
-			<div class="slide-it">
+			<div class="slide-it" >
 				<img src="{{ asset($front->image)}}" alt="">
 			</div>
 		@endforeach
 			<span class="pager"></span>
 		</div>
 		 <div class="overlay">
+
 			<h1 class="main-title text-shadow font-light">INCREDIBLE <span class="font-bold"> &nbsp; ASRAHA</span></h1>
 
 			<h1 class="anim-text">
@@ -43,7 +44,7 @@
 					</u>
 				</span>
 			</h1>
-			<h1 class="down-angle"><a href="#page-down" class="a"><i class="icon-angle-down"></i></a></h1>
+
 		</div>
 
 
@@ -89,10 +90,11 @@
 
 								<p class="text-muted">{{$post->created_at->toFormattedDateString() }} By: {{ $post->author }}</p>
 								<hr class="hr-dashed" />
-								<div class="blog-content-box">
-									<p class="abh text-black">
-										{{ $post->body }}
-									</p>
+									<div class="blog-content-box">
+										<p class="abh text-black">
+											{{ $post->body }}
+										</p>
+										{{-- <a href="">View more</a> --}}
 									</div>
 								</div>
 							</div>
@@ -111,6 +113,38 @@
 </div>
 {{-- blog --}}
 
+<div class="container-fluid">
+<div class="row">
+	<div class="winner-div">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img class="winner-img" src="{{ asset($winner->image)}}" alt="">
+				</div>
+				<div class="col-md-6">
+					<h1 class="text-white">Winner of the day</h1>
+					 <h3 class="wname">{{ $winner->winner_name }}</h3>
+					<p class="lead text-white">
+						{{ $winner->winner_msg }}
+					</p>
+					<ul class="list-inline wsosial">
+						<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>
+						<li><a href=""><img style="margin-top: -6px;" src="/img/whatsapp.png" alt=""></a></li>
+						<li><a href=""><img src="/img/twitter.png" alt=""></a></li>
+						<li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>	
+
+	
+	</div>
+</div>
+	
+</div>
+
 <div class="container-fluid bg-gray">
 	<div class="row">
 		<div class="container">
@@ -127,7 +161,6 @@
 
 						<div class="atvImg no-shadow head-poaple-img">
 							<img class="" src="img/asraha1.jpg" alt="">
-							<div class="atvImg-layer"></div>
 							<div class="atvImg-layer" data-img="img/asraha1.jpg"></div>
 						</div>
 

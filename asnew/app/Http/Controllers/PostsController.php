@@ -7,6 +7,7 @@ use App\Post;
 use App\Front;
 use App\valuable;
 use App\Gallery;
+use App\Winner;
 class PostsController extends Controller
 {
     public function index()
@@ -15,7 +16,8 @@ class PostsController extends Controller
       $fronts = Front::all();
       $valuables = valuable::all();
       $galleries = Gallery::all();
-    	return view('posts.index', compact('posts', 'fronts', 'valuables', 'galleries'));
+      $winner = Winner::latest()->first();
+    	return view('posts.index', compact('posts', 'fronts', 'valuables', 'galleries', 'winner'));
     }
 
     public function allPosts()
@@ -49,7 +51,7 @@ class PostsController extends Controller
       $post->save();
    		return back()->with('success', 'Your post has been saved!');
     }
-
+// image
     protected function storeImage($image) {
       $ext = $image->getClientOriginalExtension();
       $name = str_random(20);
@@ -57,6 +59,7 @@ class PostsController extends Controller
       return "/img/blog/{$name}.{$ext}";
     }
 
+// image END
 
       public function getDeletePost($post_id)
     {
