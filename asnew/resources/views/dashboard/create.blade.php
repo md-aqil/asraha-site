@@ -41,6 +41,9 @@
 				         <li class="nav"><a href="#E" data-toggle="tab">
 				        <img src="/img/manager.svg" alt="">
 				        Creat Winner</a></li>
+				          <li class="nav"><a href="#F" data-toggle="tab">
+				        <img src="/img/manager.svg" alt="">
+				        Upload Web Theme</a></li>
 				    </ul>
 				</div>
 			</div>
@@ -219,69 +222,138 @@
 				    	    </div>
 
 
-				    <div class="tab-pane fade" id="E">
-				    	    <h1>Creat Gallery</h1>
-				    	    <div class="segment">
-				    	    	<form method="POST" action="/winner" enctype="multipart/form-data">
-				    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-				    	    	
-				    	    			
-				    	    			<div class="form-group">
-				    	    				<input class="form-control" type="text" name="winner_name" placeholder="Winner Name">
-				    	    			</div>
-				    	    			<div class="from-group">
-				    	    					<input class="form-control" type="text" name="winner_msg" placeholder="Winner Massage">
-				    	    			</div>
-				    	    			<div class="form-group clearfix segment">
+					    <div class="tab-pane fade" id="E">
+					    	    <h1>Creat Gallery</h1>
+					    	    <div class="segment">
+					    	    	<form method="POST" action="/winner" enctype="multipart/form-data">
+					    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+					    	    	
+					    	    			
+					    	    			<div class="form-group">
+					    	    				<input class="form-control" type="text" name="winner_name" placeholder="Winner Name">
+					    	    			</div>
+					    	    			<div class="from-group">
+					    	    					<input class="form-control" type="text" name="winner_msg" placeholder="Winner Massage">
+					    	    			</div>
+					    	    			<div class="form-group clearfix segment">
 
-				    	    				<input type="file" name="image" class="pull-left" required>
-				    	    				<button class="btn btn-primary pull-right">Publish</button>
-				    	    			</div>
+					    	    				<input type="file" name="image" class="pull-left" required>
+					    	    				<button class="btn btn-primary pull-right">Publish</button>
+					    	    			</div>
 
-				    	    		</form>
-				    	    </div>
-    	<div class="">
-    		<div class="row">
-    			<div class="col-md-12">
-    			<h1>&nbsp;</h1>
-    			<h1 class="title-header text-left">Area News</h1>
-    			<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
-    			<hr class="styled" style="border-color: #c1c1c1;">
-    			</div>
-    		</div>
+					    	    		</form>
+					    	    </div>
+					    		<div class="row">
+					    			<div class="col-md-12">
+					    			<h1>&nbsp;</h1>
+					    			<h1 class="title-header text-left">Area News</h1>
+					    			<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
+					    			<hr class="styled" style="border-color: #c1c1c1;">
+					    			</div>
+					    		</div>
 
-    		<div class="row">
-    		@foreach($winners as $winner)
-    			<div class="col-md-4">
-    				<div class="panel panel-default panel-blog">
-    				<div class="panel-heading">
-    					<div class="rmv-blog pull-right">
-    					
-							<a href="{{ route('winner.delete', $winner->id) }} " class="btn btn-danger btn-sm"  title="Alert" data-toggle="popover"
-							data-placement="top"><i class="glyphicon glyphicon-trash"></i></a>
-    						
-    					</div>
+					    		<div class="row">
+					    		@foreach($winners as $winner)
+					    			<div class="col-md-4">
+					    				<div class="panel panel-default panel-blog">
+					    				<div class="panel-heading">
+					    					<div class="rmv-blog pull-right">
+					    					
+												<a href="{{ route('winner.delete', $winner->id) }} " class="btn btn-danger btn-sm"  title="Alert" data-toggle="popover"
+												data-placement="top"><i class="glyphicon glyphicon-trash"></i></a>
+					    						
+					    					</div>
 
-    				<img class="pimg" src="{{ asset($winner->image)}}" alt="">
-    				</div>
-    				  <div class="panel-body">
-    					  <div>
-    					 	 	<h4 class="">{{ $winner->winner_name }}</h4>
-    					  		<p class="text-muted">{{$winner->created_at->toFormattedDateString() }} &nbsp; | &nbsp; From Asraha</p>
-    					  </div>
-    					  <hr class="styled">
-    					<p class="">
-    						{{ $winner->winner_msg }}
-    						</p>
-    				  </div>
-    				</div>
-    			</div>
-    			@endforeach
-    		</div>
-    		
-    	</div>
+					    				<img class="pimg" src="{{ asset($winner->image)}}" alt="">
+					    				</div>
+					    				  <div class="panel-body">
+					    					  <div>
+					    					 	 	<h4 class="">{{ $winner->winner_name }}</h4>
+					    					  		<p class="text-muted">{{$winner->created_at->toFormattedDateString() }} &nbsp; | &nbsp; From Asraha</p>
+					    					  </div>
+					    					  <hr class="styled">
+					    					<p class="">
+					    						{{ $winner->winner_msg }}
+					    						</p>
+					    				  </div>
+					    				</div>
+					    			</div>
+					    			@endforeach
+					    		</div>
+					    </div>
 
-				    	    </div>
+					        <div class="tab-pane fade" id="F">
+					        	    <h1>Upload Theme</h1>
+					        	    <div class="segment">
+					        	    	<form method="POST" action="/theme" enctype="multipart/form-data">
+					        	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+
+					        	    			<div class="form-group">
+					        	    				<input class="form-control" type="text" name="price" placeholder="themme price">
+					        	    			</div>
+					        	    			<div class="form-group">
+					        	    				<input class="form-control" type="text" name="name" placeholder="theme name">
+					        	    			</div>
+					        	    			<div class="form-group">
+					        	    				<input class="form-control" type="text" name="discription" placeholder="theme discription">
+					        	    			</div>
+					        	    			<div class="form-group clearfix segment">
+					        	    				<label class="control-label">Theme Thumbnail</label>
+					        	    				<input type="file" name="thumb" required>
+					        	    			</div>
+					        	    		<div class="form-group clearfix segment">
+					        	    			<div class="pull-left">
+					        	    				<label class="control-label">Theme Folder</label>
+					        	    				<input type="file" name="template" class="" required>
+					        	    			</div>
+					        	    				<button class="btn btn-primary pull-right">Publish</button>
+					        	    		</div>
+
+					        	    		</form>
+					        	    </div>
+
+					        		<div class="row">
+					        			<div class="col-md-12">
+					        			<h1>&nbsp;</h1>
+					        			<h1 class="title-header text-left">Area News</h1>
+					        			<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
+					        			<hr class="styled" style="border-color: #c1c1c1;">
+					        			</div>
+					        		</div>
+
+
+					        		<div class="row">
+					        		@foreach($themes as $theme)
+					        			<div class="col-md-4">
+					        				<div class="panel panel-default panel-blog">
+					        				<div class="panel-heading tmlheight">
+					        				
+					        					<div class="rmv-blog pull-right">
+					        				<label class="tmp-label" style="top:8px">{{ $theme->price }}</label>
+
+					    							<a href="{{ route('theme.delete', $theme->id) }} " class="btn btn-danger btn-sm"  title="Alert" data-toggle="popover"
+					    							data-placement="top"><i class="glyphicon glyphicon-trash"></i></a>
+					        						
+					        					</div>
+
+					        				<img class="scrsht" src="{{ asset($theme->thumb)}}" alt="">
+					        				</div>
+					        				  <div class="panel-body">
+					        					  <div>
+					        					 	 	<h4 class="">{{ $theme->name }}</h4>
+					        					  		<p class="text-muted">{{$theme->created_at->toFormattedDateString() }} &nbsp; | &nbsp; From Asraha</p>
+					        					  </div>
+					        					  <hr class="styled">
+					        					<p class="">
+					        						{{ $theme->discription }}
+					        						</p>
+					        				  </div>
+					        				</div>
+					        			</div>
+					        			@endforeach
+					        		</div>
+					        </div>
+
 				</div>
 			</div>
 		</div>

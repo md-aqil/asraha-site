@@ -17,9 +17,6 @@
 <script src="/js/atvImg.js"></script>
 <script src="/js/pinterest_grid.js"></script>
 
-<script src="/js/Websnowjq.js"></script>
-
-
 <script>
 	$(document).ready(function() {
 	$('.tlt').textillate({
@@ -188,7 +185,7 @@ $('.segment-gallery')
  $(document).ready(function() {
 
             $('#blog-landing').pinterest_grid({
-                no_columns: 3,
+                no_columns: 2,
                 padding_x: 10,
                 padding_y: 10,
                 margin_bottom: 50,
@@ -196,6 +193,4 @@ $('.segment-gallery')
             });
 
         });
-// $("#divSnow").websnowjq();
-
 </script>

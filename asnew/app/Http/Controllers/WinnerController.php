@@ -38,9 +38,8 @@ class WinnerController extends Controller
     public function store(Request $request)
     {
         $image = $this->storeImage($request->file('image'));
-
         Winner::create($request->except('_token', 'image') + ['image' => $image]);
-       return back()->with('success', 'Your Winner has been saved!');
+        return back()->with('success', 'Your Winner has been saved!');
     }
 
 
@@ -101,6 +100,10 @@ class WinnerController extends Controller
       $name = str_random(20);
       $image->move(public_path() . '/img/winner', $name . '.' . $ext );
       return "/img/winner/{$name}.{$ext}";
+    }
+
+    public function downloadTemplate($id) {
+        return response()->download(resource_path('downloads/template'.$id.'.zip'));
     }
 
 // image END

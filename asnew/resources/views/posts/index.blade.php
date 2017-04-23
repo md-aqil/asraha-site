@@ -120,13 +120,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img class="winner-img" src="{{ asset($winner->image)}}" alt="">
+				@if ($winner) 
+					<img class="winner-img" src="{{ asset($winner->image ) or '' }}" alt="">
+				@endif
 				</div>
 				<div class="col-md-6">
 					<h1 class="text-white">Winner of the day</h1>
-					 <h3 class="wname">{{ $winner->winner_name }}</h3>
+					 <h3 class="wname">{{ $winner->winner_name or '' }}</h3>
 					<p class="lead text-white">
-						{{ $winner->winner_msg }}
+						{{ $winner->winner_msg or "" }}
 					</p>
 					<ul class="list-inline wsosial">
 						<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>

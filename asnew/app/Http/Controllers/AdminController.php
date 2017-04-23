@@ -16,8 +16,9 @@ class AdminController extends Controller
     	$valuables = \App\Valuable::all();
         $galleries = \App\Gallery::all();
         $winners = \App\Winner::all();
+        $themes = \App\Theme::all();
 
-    	return view('dashboard.create')->with(compact('posts', 'fronts','valuables','galleries', 'winners'));
+    	return view('dashboard.create')->with(compact('posts', 'fronts','valuables','galleries', 'winners', 'themes'));
     	return 'passed';
     }
 }

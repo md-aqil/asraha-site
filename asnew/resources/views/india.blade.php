@@ -50,7 +50,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="">
-				<img class="img-responsive" src="img/att.jpg" alt="">
+				<img class="width100" src="img/att.jpg" alt="">
 			</div>
 		</div>
 	</div>
@@ -131,7 +131,7 @@
 		<div class="row">
 			<div class="front-banner-box-taj">
 			<!-- <div class="front-banner-img"></div> -->
-			<img class="img-responsive" src="img/taj.jpg" alt="">
+			<img class="width100" src="img/taj.jpg" alt="">
 		
 		<div class="front-banner-overlay" id="divSnow">
 		</div>

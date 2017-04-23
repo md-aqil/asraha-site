@@ -8,6 +8,7 @@ use App\Front;
 use App\valuable;
 use App\Gallery;
 use App\Winner;
+use App\Theme;
 class PostsController extends Controller
 {
     public function index()
@@ -16,6 +17,7 @@ class PostsController extends Controller
       $fronts = Front::all();
       $valuables = valuable::all();
       $galleries = Gallery::all();
+     
       $winner = Winner::latest()->first();
     	return view('posts.index', compact('posts', 'fronts', 'valuables', 'galleries', 'winner'));
     }
