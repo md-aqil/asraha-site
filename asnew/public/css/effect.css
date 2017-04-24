@@ -162,7 +162,7 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: 100;
+	z-index: 10000;
 }
 .mobile-inner-header-icon{
 	color: #ffffff;

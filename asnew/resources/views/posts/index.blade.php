@@ -119,13 +119,14 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+			<h1 class="text-white _mwt visible-xs">Winner of the day</h1>
+				<div class="col-md-6 ">
 				@if ($winner) 
-					<img class="winner-img" src="{{ asset($winner->image ) or '' }}" alt="">
+					<img class="winner-img" src="{{ asset($winner->image ) }}" alt="">
 				@endif
 				</div>
 				<div class="col-md-6">
-					<h1 class="text-white">Winner of the day</h1>
+					<h1 class="text-white hidden-xs">Winner of the day</h1>
 					 <h3 class="wname">{{ $winner->winner_name or '' }}</h3>
 					<p class="lead text-white">
 						{{ $winner->winner_msg or "" }}
@@ -161,9 +162,13 @@
 							<h4 class="head-name">Khurshid Anwar</h4>
 							<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
 
-						<div class="atvImg no-shadow head-poaple-img">
+						<div class="atvImg no-shadow head-poaple-img hidden-xs">
 							<img class="" src="img/asraha1.jpg" alt="">
 							<div class="atvImg-layer" data-img="img/asraha1.jpg"></div>
+						</div>
+						<div class="visible-xs">
+							<img class="img-cover" src="img/asraha1.jpg" alt="">
+							
 						</div>
 
 							<p class="abh">
@@ -190,10 +195,14 @@
 						<div class="head-container">
 							<h4 class="head-name">Khurshid Anwar</h4>
 							<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
-								<div class="atvImg no-shadow head-poaple-img">
+								<div class="atvImg no-shadow head-poaple-img hidden-xs">
 									<img class="" src="img/asraha1.jpg" alt="">
 									<div class="atvImg-layer"></div>
 									<div class="atvImg-layer" data-img="img/asraha1.jpg"></div>
+								</div>
+
+								<div class="head-poaple-img visible-xs">
+									<img class="img-cover" src="img/asraha1.jpg" alt="">
 								</div>
 								<p class="abh">
 									As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."

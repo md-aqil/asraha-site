@@ -18,7 +18,7 @@ width: 100%;
 
 <div class="container-fluid bg-gray">
 	<div class="row">
-<p>&nbsp</p>
+<h1>&nbsp</h1>
 <h1 class="title-header">Its Free for limited time</h1>
 <h3 class="text-center font-light">Always do your best. What you plant now, you will harvest later.</h3>
 <div class="text-center  hidden-sm hidden-xs"><img src="img/line.png" alt=""></div>

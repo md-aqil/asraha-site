@@ -79,6 +79,7 @@ body {
 	width: 100%;
   	height: 550px;
 
+
 }
 
 
@@ -373,6 +374,7 @@ label[for*='4']::before {
   label {
     padding: 15px;
   }
+
   .letter {
   	font-size: 2em !important;
   }
@@ -524,9 +526,7 @@ background: none;
     color: #646FB0;
     font-size: 20px;
 }
-.news-photos {
-	width: 213px;
-}
+
 .news-photos >img {
   width: 100%;
 }
@@ -544,6 +544,8 @@ background: none;
 }
 .slide-it img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* contacts */
 .text-md {
@@ -562,7 +564,9 @@ background: none;
   box-shadow: none;
 
 }
-
+.cycle-slideshow {
+  height: 100%;
+}
 .modal-btn-round {
   display: inline-block;
  background: #2185d0;
@@ -925,6 +929,12 @@ a.text-black {
     }
 }
 
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
      /*ripple effect -------------------------------------------- END*/
   
    .asraha-logo>a {
@@ -938,8 +948,14 @@ a.text-black {
    
 @media (max-width: 767px) {
   .main-title {
-  	margin-top: 110px ;
   	font-size: 48px;
+
+  }
+  .main-img-box {
+    height: 500px;
+  }
+  .pager {
+      margin-top: -134px;
   }
   .small-link-box {
     margin-top: 25px;
@@ -952,7 +968,19 @@ a.text-black {
     font-family: Isadora;
   }
   
- 
+ .wname,.news-header {
+    margin-top: 25px !important;
+  }
+  .thumbnail._thmb {
+        width: 185px
+  }
+#myModal .modal-dialog {
+  margin-top: 90px;
+}
+
+#myCarousel .item.active {
+  height: 300px;
+}
   .pr0 {
     padding-right: 15px;
   }
@@ -1104,12 +1132,19 @@ a.text-black {
 #abt-slider .next{
   right: 0;
 }
-
+.wsosial {
+  margin-bottom: 30px;
+}
+._mwt {
+      margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 .winner-div {
   background: linear-gradient(45deg, #6973b2 29%, #1ebbff 99%);
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   padding-top: 42px;
 }
 .winner-img{
