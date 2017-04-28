@@ -37,7 +37,7 @@ class VideoController extends Controller
     {
        Video::create($request->except('_token'));
 
-        return back()->with('success', 'Your Winner has been saved!');
+        return back()->with('success', 'Your Video has been uploade!');
     }
 
     /**
@@ -84,6 +84,6 @@ class VideoController extends Controller
     {
          $video = Video::find($id);
        $video->delete();
-       return back()->with('success', 'Your Winner has been deleted!');
+       return back()->with('success', 'Your Video has been deleted!');
     }
 }

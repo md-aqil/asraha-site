@@ -39,7 +39,7 @@ class ThemeController extends Controller
         $thumb = $this->storeThumb($request->file('thumb'));
         $template = $this->storeTemplate($request->file('template'));
         Theme::create($request->except('_token', 'thumb', 'template') + compact('thumb', 'template'));
-        return back()->with('success', 'Your Winner has been saved!');
+        return back()->with('success', 'Your web template has been uploaded!');
     }
 
      protected function storeThumb($image) {
@@ -100,7 +100,7 @@ class ThemeController extends Controller
     {
           $theme = Theme::find($id);
        $theme->delete();
-       return back()->with('success', 'Your Winner has been deleted!');
+       return back()->with('success', 'Your web template has been deleted!');
     }
 
     public function download($id) {
