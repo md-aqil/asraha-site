@@ -46,16 +46,10 @@
 .sidebar-list li a {
     text-decoration: none;
     display: block;
-    padding: 10px 20px;
     color: #577688;
-    border-bottom: 1px solid rgba(235, 239, 242, 0.49);
-    border-left: 2px solid #fff;
+   
 }
-.sidebar-list .nav.active a:hover {
-  background: none;
-  border-radius: none;
-  border:none;
-}
+
 .sidebar-list .nav.active a:focus {
   background: none;
 }
