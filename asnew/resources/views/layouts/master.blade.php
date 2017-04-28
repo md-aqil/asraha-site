@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="/css/atvImg.css">
 	<link rel="stylesheet" href="/css/india.css">
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="shortcut icon" href="/img/favicon.png">
 
 	
 </head> 

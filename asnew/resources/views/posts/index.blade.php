@@ -114,37 +114,37 @@
 {{-- blog --}}
 
 <div class="container-fluid">
-<div class="row">
-	<div class="winner-div">
+	<div class="row">
+		<div class="winner-div">
 
-		<div class="container">
-			<div class="row">
-			<h1 class="text-white _mwt visible-xs">Winner of the day</h1>
-				<div class="col-md-6 ">
-				@if ($winner) 
-					<img class="winner-img" src="{{ asset($winner->image ) }}" alt="">
-				@endif
+			<div class="container">
+				<div class="row">
+				<h1 class="text-white _mwt visible-xs">Winner of the day</h1>
+					<div class="col-md-6 ">
+					@if ($winner) 
+						<img class="winner-img" src="{{ asset($winner->image ) }}" alt="">
+					@endif
+					</div>
+					<div class="col-md-6">
+						<h1 class="text-white hidden-xs">Winner of the day</h1>
+						 <h3 class="wname">{{ $winner->winner_name or '' }}</h3>
+						<p class="lead text-white">
+							{{ $winner->winner_msg or "" }}
+						</p>
+						<ul class="list-inline wsosial">
+							<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>
+							<li><a href=""><img style="margin-top: -6px;" src="/img/whatsapp.png" alt=""></a></li>
+							<li><a href=""><img src="/img/twitter.png" alt=""></a></li>
+							<li>
+							
+						</ul>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<h1 class="text-white hidden-xs">Winner of the day</h1>
-					 <h3 class="wname">{{ $winner->winner_name or '' }}</h3>
-					<p class="lead text-white">
-						{{ $winner->winner_msg or "" }}
-					</p>
-					<ul class="list-inline wsosial">
-						<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>
-						<li><a href=""><img style="margin-top: -6px;" src="/img/whatsapp.png" alt=""></a></li>
-						<li><a href=""><img src="/img/twitter.png" alt=""></a></li>
-						<li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>	
+			</div>	
 
-	
+		
+		</div>
 	</div>
-</div>
 	
 </div>
 
@@ -278,6 +278,9 @@
 </div>
 
 {{-- slider end--}}
+
+
+@include('layouts.video')
 
 	{{-- another --}}
 

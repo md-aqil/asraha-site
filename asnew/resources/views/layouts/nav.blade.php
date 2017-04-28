@@ -9,7 +9,7 @@
 						<li><a href="/india">About India</a></li>
 						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
                         <li><a href="/about">About us</a></li>
-						<li><a href="{{ route('templates.template') }}">Tamplates</a></li>
+						<li><a href="{{ route('templates.template') }}">Templates</a></li>
 						
 
 						 @if (Auth::guest())
@@ -59,7 +59,7 @@
 						<li><a href="/india">About India</a></li>
 						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
 						<li><a href="/about">About us</a></li>
-						<li><a href="{{ route('templates.template') }}">Tamplates</a></li>
+						<li><a href="{{ route('templates.template') }}">Templates</a></li>
 
 						 @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>

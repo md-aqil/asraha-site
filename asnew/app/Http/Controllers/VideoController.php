@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Winner;
+use App\Video;
 use Illuminate\Http\Request;
 
-class WinnerController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -32,39 +32,32 @@ class WinnerController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
-
-
      */
     public function store(Request $request)
     {
-        $image = $this->storeImage($request->file('image'));
-        
-        Winner::create($request->except('_token', 'image') + ['image' => $image]);
+       Video::create($request->except('_token'));
+
         return back()->with('success', 'Your Winner has been saved!');
     }
-
-
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Winner  $winner
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(Winner $winner)
+    public function show(Video $video)
     {
-       
-
-
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Winner  $winner
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(Winner $winner)
+    public function edit(Video $video)
     {
         //
     }
@@ -73,10 +66,10 @@ class WinnerController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Winner  $winner
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Winner $winner)
+    public function update(Request $request, Video $video)
     {
         //
     }
@@ -84,29 +77,13 @@ class WinnerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Winner  $winner
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $winner = Winner::find($id);
-       $winner->delete();
+         $video = Video::find($id);
+       $video->delete();
        return back()->with('success', 'Your Winner has been deleted!');
     }
-
-
-    // image
-    protected function storeImage($image) {
-      $ext = $image->getClientOriginalExtension();
-      $name = str_random(20);
-      $image->move(public_path() . '/img/winner', $name . '.' . $ext );
-      return "/img/winner/{$name}.{$ext}";
-    }
-
-    public function downloadTemplate($id) {
-        return response()->download(resource_path('downloads/template'.$id.'.zip'));
-    }
-
-// image END
-
 }

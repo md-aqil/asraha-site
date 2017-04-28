@@ -34,16 +34,22 @@
 				        Create front banner</a></li>
 				        <li class="nav"><a href="#C" data-toggle="tab">
 				        <img src="/img/manager.svg" alt="">
-				        Creat Valuable leaders</a></li>
+				        Create Valuable leaders</a></li>
 				         <li class="nav"><a href="#D" data-toggle="tab">
-				        <img src="/img/manager.svg" alt="">
-				        Creat Gallery</a></li>
+				        <img src="/img/pictures.svg" alt="">
+				        Create Gallery</a></li>
 				         <li class="nav"><a href="#E" data-toggle="tab">
 				        <img src="/img/manager.svg" alt="">
-				        Creat Winner</a></li>
+				        Create Winner</a></li>
+
+
 				          <li class="nav"><a href="#F" data-toggle="tab">
-				        <img src="/img/manager.svg" alt="">
-				        Upload Web Theme</a></li>
+				        <img src="{{ asset('/img/pictures.svg') }}" alt="">
+				        Upload Web template</a></li>
+
+				          <li class="nav"><a href="#G" data-toggle="tab">
+				        <img src="{{ asset('/img/youtube.png') }}" alt="">
+				        Upload Video</a></li>
 				    </ul>
 				</div>
 			</div>
@@ -191,7 +197,7 @@
 				    </div>
 
 				    <div class="tab-pane fade" id="D">
-				    	    <h1>Creat Gallery</h1>
+				    	    <h1>Create Gallery</h1>
 				    	    <div class="segment">
 				    	    	<form method="POST" action="/gallery" enctype="multipart/form-data">
 				    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -223,7 +229,7 @@
 
 
 					    <div class="tab-pane fade" id="E">
-					    	    <h1>Creat Gallery</h1>
+					    	    <h1>Create Winner</h1>
 					    	    <div class="segment">
 					    	    	<form method="POST" action="/winner" enctype="multipart/form-data">
 					    	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -353,6 +359,51 @@
 					        			@endforeach
 					        		</div>
 					        </div>
+
+	            <div class="tab-pane fade" id="G">
+	            	    <h1>Upload Video</h1>
+	            	    <div class="segment">
+	            	    	<form method="POST" action="/video">
+	            	    		<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+
+	            	    			<div class="form-group">
+	            	    				<input class="form-control" type="text" name="video" placeholder="Insert here you Video link">
+	            	    			</div>
+	            	    			
+	            	    		
+	            	    		<div class="form-group clearfix segment">
+	            	    			
+	            	    				<button class="btn btn-primary">Publish</button>
+	            	    		</div>
+
+	            	    		</form>
+	            	    </div>
+
+	            		<div class="row">
+	            			<div class="col-md-12">
+	            			<h1>&nbsp;</h1>
+	            			<h1 class="title-header text-left">Area News</h1>
+	            			<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
+	            			<hr class="styled" style="border-color: #c1c1c1;">
+	            			</div>
+
+							@foreach($videos as $video)
+	            			  <div class="col-md-3">
+	            			    <a href="{{ route('video.delete', $video->id) }} " class="thumbnail clearfix">
+	            			        <button class="badge danger pull-right">X</button>
+
+            						  	<div class="frame-thumb">
+            						  		{!! $video->video !!}
+            						  	</div>	
+	            						  	
+	            						   
+	            			    </a>
+	            			  
+	            		</div>
+						@endforeach
+
+
+	            </div>
 
 				</div>
 			</div>

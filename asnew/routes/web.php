@@ -19,7 +19,12 @@ Route::get('/about', 'ValuableController@about');
 Route::get('/india', 'ValuableController@india');
 
 Route::post('/winner', 'WinnerController@store');
+
 Route::post('/theme', 'ThemeController@store');
+
+Route::post('/video', 'VideoController@store');
+
+
 Route::get('/templates', 'ThemeController@index')->name('templates.template');;
 Route::get('/templates/{id}/download', 'ThemeController@download')->name('templates.download');;
 
@@ -41,4 +46,7 @@ Route::get('/delete-gallery/{id}', 'PostsController@deletegallery')->name('galle
 Route::get('/delete-comment/{id}', 'CommentsController@deletecomment')->name('comment.delete');
 
 Route::get('/delete-winner/{id}', 'WinnerController@destroy')->name('winner.delete');
+
 Route::get('/delete-theme/{id}', 'ThemeController@destroy')->name('theme.delete');
+
+Route::get('/delete-video/{id}', 'VideoController@destroy')->name('video.delete');
