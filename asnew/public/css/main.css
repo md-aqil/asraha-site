@@ -1160,6 +1160,32 @@ a.text-black {
     border-radius: 4px;
           box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
 }
+.shadow1 {
+  position: relative;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+.shadow1:before, .shadow1:after{
+  position:absolute;
+  content:"";
+  bottom:12px;left:15px;top:80%;
+  width:45%;
+  background: rgb(44, 70, 103);
+  z-index:-1;
+  -webkit-box-shadow: 0 20px 15px  rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: 0 20px 15px  rgba(0, 0, 0, 0.50);
+  box-shadow: 0 20px 15px  rgba(0, 0, 0, 0.50);
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+}
+.shadow1:after{
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  transform: rotate(6deg);
+  right: 15px;left: auto;
+}
 
 .wname {
   margin-top: 0;
