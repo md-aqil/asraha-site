@@ -1,10 +1,62 @@
 
-<div class="container-fluid">
-<div class="row">
-	<div class="bottom">
+	<div class="container-fluid">
+			<div class="row">
+				<footer class="footer">
+					<div class="container">
+					<div class="col-md-4">
+						<a href="/" class="logo-text">Asraha</a>
+					</div>
+					<div class="col-md-8">
+						<ul class="list-inline footer-list">
+							<li><a href="/">Home</a></li>
+						<li><a href="/india">About India</a></li>
+						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
+                        <li><a href="/about">About us</a></li>
+						<li><a href="{{ route('templates.template') }}">Templates</a></li>
+						
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<p class="text-muted">&copy; 2017 Asraha All rights reserved</p>
+						</div>
+						<div class="col-md-4 text-center">
+							<ul class="list-inline fsocial">
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100011049845433" target="_blank">
+										<img src="/img/facebook.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/md-aqil-09430a109/" target="_blank">
+										<img src="/img/linkedin.png" alt="">
+									</a>
+								</li>
+								<li>
+								<a href="tel:7210562014" title="7210562014">
+								<img style="margin-top: -6px;" src="/img/whatsapp.png" alt="">
+								</a>
+								</li>
+								<li><a href="https://twitter.com/aqil4k">
+								<img src="/img/twitter.png" alt=""></a></li>	
+								<li>
+								<a href="https://www.youtube.com/channel/UC61XYpVLeBp8g_BqUo6lvsw"><img src="/img/youtube.png" alt=""></a></li>
+								
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<p class="text-muted pull-right">Designed by &nbsp; <strong>
+							<a href="https://www.facebook.com/profile.php?id=100011049845433" class="text-white">Md Aqil</a></strong></p>
+						</div>
+					</div>
+				</div>
+				</footer>
+			</div>
 	</div>
-</div>
-</div>
+	
 </div><!-- main-warapper -->
 
 <script src="/js/jquery.min.js"></script>

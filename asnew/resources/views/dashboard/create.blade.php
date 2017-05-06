@@ -3,11 +3,17 @@
 @section('content')
 
 <div class="container-fluid bg-gray">
-	@if(session('success'))
-	<div class="alert alert-success">{{ session('success') }}
-	<a href="/" class="btn btn-success pull-right" target="_blank" style="margin-top: -5px;"> Visit Site</a>
+	<div class="container mt15">
+		<div class="row">
+			@if(session('success'))
+			<div class="alert alert-success">{{ session('success') }}
+			<a href="/" class="btn btn-success pull-right" target="_blank" style="margin-top: -5px;"> Visit Site</a>
+			</div>
+			@endif
+		</div>
+		
 	</div>
-	@endif
+	
 	<div class="row">
 		<div class="container shadow-container no-padding">
 		<div class="row">

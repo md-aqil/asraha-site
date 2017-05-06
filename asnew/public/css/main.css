@@ -1275,3 +1275,42 @@ padding:  10px;
 .frame-thumb iframe {
   width: 100%;
 }
+
+.mt15 {
+  margin-top: 15px;
+}
+.footer {
+  width: 100%;
+  background: #000724;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 30px;
+}
+.footer-list {
+  float: right;
+  margin-top: 20px;
+  
+}
+.footer-list li a  {
+  color: #fff;
+  padding-right: 15px;
+     padding-left: 15px; 
+     font-size: 17px;
+     font-weight: 300;
+}
+.mt10  {
+  margin-top: 10px;
+}
+.fsocial li a  {
+  padding: 6px 11px;
+  display: block;
+}
+.logo-text  {
+  font-size: 40px;
+  color: #fff;
+}
+.logo-text:hover {
+  text-decoration: none;
+  color: #2185d0;
+
+}

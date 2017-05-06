@@ -1,4 +1,4 @@
-<div>
+
 <div class="container-fluid res-header-desktop hidden-sm hidden-xs">
 		<div class="row">
 			<div class="header animated">
