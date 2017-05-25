@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function dashboard(Request $req) {
     	$posts = Post::all();
     	$fronts = \App\Front::all();
-    	$valuables = \App\Valuable::all();
+    	$valuables = \App\valuable::all();
         $galleries = \App\Gallery::all();
         $winners = \App\Winner::all();
         $themes = \App\Theme::all();
