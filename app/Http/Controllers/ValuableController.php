@@ -14,7 +14,7 @@ class ValuableController extends Controller
         	$path = $this->storeImage( request()->file('value-image'));
       	}
 
-		$front = new valuable;
+		$front = new Valuable;
 		$front->name = $req->input('name');
 		$front->number = $req->input('number');
 		$front->massage = $req->input('massage');
