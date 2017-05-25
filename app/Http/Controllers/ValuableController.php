@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Valuable;
+
 class ValuableController extends Controller
 {
    public function store(Request $req)
