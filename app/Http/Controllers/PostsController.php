@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Front;
-use App\valuable;
+use App\Valuable;
 use App\Gallery;
 use App\Winner;
 use App\Video;
@@ -16,7 +16,7 @@ class PostsController extends Controller
     {
     	$posts = Post::latest()->get();
       $fronts = Front::all();
-      $valuables = valuable::all();
+      $valuables = Valuable::all();
       $galleries = Gallery::all();
       $videos = Video::all();
      
