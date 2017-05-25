@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Video;
+
+use App\Valuable;
+
 class AdminController extends Controller
 {
     //
@@ -14,7 +17,7 @@ class AdminController extends Controller
     public function dashboard(Request $req) {
     	$posts = Post::all();
     	$fronts = \App\Front::all();
-    	$valuables = \App\Valuable::all();
+    	$valuables = Valuable::all();
         $galleries = \App\Gallery::all();
         $winners = \App\Winner::all();
         $themes = \App\Theme::all();
