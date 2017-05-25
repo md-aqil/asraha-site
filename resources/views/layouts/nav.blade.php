@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="header animated">
 				<div class="container">
-				<h1 class="pull-left asraha-logo text-shadow"><a href="/"><img src="{{ asset('img/logoio.png') }}" alt=""></a></h1>
+				<h1 class="pull-left asraha-logo text-shadow"><a href="/"><img src="{{ asset('img/sitelogo.png') }}" alt=""></a></h1>
 					<ul class="nav-ul">
 						<li><a href="/">Home</a></li>
 						<li><a href="/india">About India</a></li>

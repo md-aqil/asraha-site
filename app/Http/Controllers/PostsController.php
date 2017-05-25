@@ -59,8 +59,8 @@ class PostsController extends Controller
     protected function storeImage($image) {
       $ext = $image->getClientOriginalExtension();
       $name = str_random(20);
-      $image->move(public_path() . '/img/blog', $name . '.' . $ext );
-      return "/img/blog/{$name}.{$ext}";
+      $image->move(public_path() . '/var/www/html/public/img/blog', $name . '.' . $ext );
+      return "/var/www/html/public/img/blog/{$name}.{$ext}";
     }
 
 // image END
