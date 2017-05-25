@@ -2,14 +2,14 @@
 
 
 
-Route::get('/', 'postsController@index');
+Route::get('/', 'PostsController@index');
 Route::get('/asrahainfo', function() {
 	return view('asrahainfo');
 })->name('asrahainfo');
-Route::get('all-posts', 'postsController@allPosts')->name('posts.allposts');
-Route::get('/posts/create', 'postsController@create');
-Route::post('/posts', 'postsController@store');
-Route::get('/posts/{post}', 'postsController@show');
+Route::get('all-posts', 'PostsController@allPosts')->name('posts.allposts');
+Route::get('/posts/create', 'PostsController@create');
+Route::post('/posts', 'PostsController@store');
+Route::get('/posts/{post}', 'PostsController@show');
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 Route::post('/fronts', 'FrontController@store');
 Route::post('/valuable', 'ValuableController@store');
