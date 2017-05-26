@@ -7,6 +7,14 @@
 .overflow-hidden {
 	overflow: hidden;
 }
+html {
+      height: 100%;
+    }
+    body {
+    
+      position: relative;
+      min-height: 100%;
+    }
 
 .tmp-label  {
   position: absolute;
@@ -838,6 +846,9 @@ img.bordered {
 .mt52 {
   margin-top: 62px;
 }
+.tubeframe {
+  overflow: hidden;
+}
 .panel.panel-blog {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
@@ -949,6 +960,7 @@ a.text-black {
 @media (max-width: 767px) {
   .main-title {
   	font-size: 48px;
+    margin-top: 225px;
 
   }
   .main-img-box {
@@ -1269,7 +1281,6 @@ padding:  10px;
 .tubeframe:hover  .prev {
   left: 0;
   opacity: 1;
-  
 }
 
 .frame-thumb iframe {
@@ -1285,6 +1296,9 @@ padding:  10px;
   color: #fff;
   font-weight: 300;
   padding-top: 30px;
+  position: absolute;
+      bottom: 0;
+      right: 0;left: 0;
 }
 .footer-list {
   float: right;

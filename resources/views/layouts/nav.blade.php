@@ -47,8 +47,8 @@
 
 <div class="container-fluid por">	
 	<div class="mobile-inner-header res-header-mobile animated visible-sm visible-xs">
-			<h1 class="pull-left m-logo text-shadow" style="margin-top: 3px;margin-left: 10px;">
-			<a href="index.php"><img src="img/logoio.png" alt=""></a></h1>
+			   <h1 class="pull-left m-logo text-shadow" style="margin-top: 3px;margin-left: 10px;">
+            <a href="index.php"><img src="{{ asset('img/sitelogo.png') }}" alt=""></a></h1>
     
 		<div class="mobile-inner-header-icon mobile-inner-header-icon-out ripple">
 				<span></span><span></span>
@@ -89,3 +89,4 @@
 		</div>
 	</div>
 </div>
+
