@@ -382,7 +382,10 @@ label[for*='4']::before {
   label {
     padding: 15px;
   }
-
+    .footer-list li a {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   .letter {
   	font-size: 2em !important;
   }
@@ -1296,7 +1299,7 @@ padding:  10px;
   color: #fff;
   font-weight: 300;
   padding-top: 30px;
-  position: absolute;
+  /*position: absolute;*/
       bottom: 0;
       right: 0;left: 0;
 }
