@@ -1,4 +1,8 @@
+  <link rel="stylesheet" href="/css/component.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" href="/css/paralaxx.css" />
+<link rel="stylesheet" href="/css/mobile.css">
 <style>
+
 	.container-fluid.res-header-desktop {
 		display: none;
 	}
