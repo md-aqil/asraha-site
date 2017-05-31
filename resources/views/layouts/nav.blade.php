@@ -57,6 +57,7 @@
 		<div class="mobile-inner-nav">
 			<ul class="list-unstyled">
 						<li><a href="/">Home</a></li>
+                        <li><a href="/aqil">Portfolio</a></li>
 						<li><a href="/india">About India</a></li>
 						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
 						<li><a href="/about">About us</a></li>
