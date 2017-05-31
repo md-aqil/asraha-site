@@ -13,8 +13,10 @@
 	<link rel="stylesheet" href="/css/dashboard.css">
 	<link rel="stylesheet" href="/css/atvImg.css">
 	<link rel="stylesheet" href="/css/india.css">
-	<link rel="stylesheet" href="/css/main.css">
 	<link rel="shortcut icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/css/paralaxx.css">
+	<link rel="stylesheet" href="/css/component.css">
+	<link rel="stylesheet" href="/css/main.css">
 
 	
 </head> 

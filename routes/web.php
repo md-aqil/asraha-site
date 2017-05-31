@@ -2,10 +2,15 @@
 
 
 
+Route::get('/aqil', function() {
+	return view('aqil');
+});
+
 Route::get('/', 'PostsController@index');
 Route::get('/asrahainfo', function() {
 	return view('asrahainfo');
 })->name('asrahainfo');
+
 Route::get('all-posts', 'PostsController@allPosts')->name('posts.allposts');
 Route::get('/posts/create', 'PostsController@create');
 Route::post('/posts', 'PostsController@store');

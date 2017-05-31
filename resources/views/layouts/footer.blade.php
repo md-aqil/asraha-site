@@ -68,6 +68,10 @@
 <script src="/js/bootstrap.js"></script>
 <script src="/js/atvImg.js"></script>
 <script src="/js/pinterest_grid.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/morphingdevice.js"></script>
+<script src="js/load.min.js"></script>
+<script src="js/main.js"></script>
 
 <script>
 	$(document).ready(function() {
@@ -243,6 +247,7 @@ $('.segment-gallery')
                 margin_bottom: 50,
                 single_column_breakpoint: 700
             });
+            new WOW().init();
 
         });
 </script>

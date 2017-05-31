@@ -5,7 +5,8 @@
 				<div class="container">
 				<h1 class="pull-left asraha-logo text-shadow"><a href="/"><img src="{{ asset('img/sitelogo.png') }}" alt=""></a></h1>
 					<ul class="nav-ul">
-						<li><a href="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
+						<li><a href="/aqil">Portfolio</a></li>
 						<li><a href="/india">About India</a></li>
 						<li><a href="{{ route('asrahainfo') }}">Asraha info</a></li>
                         <li><a href="/about">About us</a></li>
