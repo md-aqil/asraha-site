@@ -1,3 +1,7 @@
+<?php 
+    $page_title = 'Asraha | Admin';
+ ?>
+
 @extends('layouts.app')
 
 @section('content')

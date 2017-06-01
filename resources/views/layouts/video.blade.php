@@ -21,19 +21,18 @@
 									<i class="glyphicon glyphicon-menu-right"></i>
 								</span>
 								@foreach($videos as $video)
-		 						
-							  	<div class="framevideo">
-							  		{!! $video->video !!}
-							  	</div>	
-
+								  	<div class="framevideo">
+								  		{!! $video->video !!}
+								  	</div>	
 							  	@endforeach
+							  
 							   
 							</div>
 
 					</div>
 
 					<div class="col-md-4">
-						<h1 class="text-white hidden-xs">Video Of the Week</h1>
+						<h1 class="text-white hidden-xs">Video of the day</h1>
 						<p class="lead text-white">
 							video information
 						</p>

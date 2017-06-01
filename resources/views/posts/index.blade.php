@@ -66,7 +66,9 @@ $page_title = 'Asraha';
 							<div class="row">
 									<div class="col-md-9">
 										<h1 class="title-header text-left cdb">All News Around Darbhanga</h1>
-										<h3 class="text-center font-light text-left">Always do your best. What you plant now, you will harvest later.</h3>
+										<h3 class="text-center font-light text-left">
+											You can comment on the  news just click the news and go
+										</h3>
 									</div>
 									<div class="col-md-3 hidden-xs">
 										<a href="{{ route('posts.allposts')}}" class="modal-btn-round mt52 ripple">View All  <span style="font-size: 18px;"> &nbsp; &#8594;</span></a>
@@ -127,6 +129,18 @@ $page_title = 'Asraha';
 					@if ($winner) 
 						<img class="winner-img" src="{{ asset($winner->image ) }}" alt="">
 					@endif
+					<div class="clearfix">
+						<h2 class="text-white pull-left" style="margin-right: 30px;">आप भी 'Winner' बन सकते हैं  </h2>
+					<button class="modal-btn-round pull-left"
+					data-toggle="modal" data-target="#winner-modal"
+						style="padding: 8px 30px;
+						    background: #fff;
+						    color: #333;
+						    margin-top: 20px;"
+					>Click Here</button>
+   
+						
+					</div>
 					</div>
 					<div class="col-md-6">
 						<h1 class="text-white hidden-xs">Winner of the day</h1>
@@ -156,20 +170,20 @@ $page_title = 'Asraha';
 		<div class="container">
 			<div class="row">
 				<h1>&nbsp;</h1>
-				<h1 class="title-header">Valuable leaders of Asraha, and there thoughts</h1>
+				<h1 class="title-header">Present leaders of Asraha, and there thoughts</h1>
 				<h3 class="text-center font-light">Always do your best. What you plant now, you will harvest later.</h3>
 				<div class="text-center  hidden-sm hidden-xs"><img  src="img/line.png" alt=""></div>
 					<p>&nbsp;</p>
 					<div class="col-md-4">
 						<div class="head-container">
 							<h4 class="head-name">Khurshid Anwar</h4>
-							<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
+							<p class="text-muted">Mukhya of Ashraha</p>
 								<div class="atvImg no-shadow head-poaple-img hidden-xs">
-									<img class="" src="img/asraha1.jpg" alt="">
-									<div class="atvImg-layer" data-img="img/asraha1.jpg"></div>
+									<img class="" src="img/khurshid.jpg" alt="">
+									<div class="atvImg-layer" data-img="img/khurshid.jpg"></div>
 								</div>
 								<div class="visible-xs">
-									<img class="img-cover" src="img/asraha1.jpg" alt="">
+									<img class="img-cover" src="img/khurshid.jpg" alt="">
 								</div>
 							<p class="abh">
 								As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
@@ -178,14 +192,14 @@ $page_title = 'Asraha';
 					</div>
 					<div class="col-md-4">
 						<div class="head-container">
-							<h4 class="head-name">Khurshid Anwar</h4>
-							<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
+							<h4 class="head-name">Mr. Chhotu</h4>
+							<p class="text-muted">Panchayat Samiti & Upp Pramukh Ashraha</p>
 								<div class="atvImg no-shadow head-poaple-img hidden-xs">
-									<img class="" src="img/asraha1.jpg" alt="">
-									<div class="atvImg-layer" data-img="img/asraha1.jpg"></div>
+									<img class="" src="img/chhotu.jpg" alt="">
+									<div class="atvImg-layer" data-img="img/chhotu.jpg"></div>
 								</div>
 								<div class="visible-xs">
-									<img class="img-cover" src="img/asraha1.jpg" alt="">
+									<img class="img-cover" src="img/chhotu.jpg" alt="">
 								</div>
 								<p class="abh">
 									As a leader, I am tough on myself and I raise the standard for everybody; however, I am very caring because I want people to excel at what they are doing so that they can aspire to be me in the future."
@@ -195,8 +209,8 @@ $page_title = 'Asraha';
 					</div>
 					<div class="col-md-4">
 						<div class="head-container">
-							<h4 class="head-name">Khurshid Anwar</h4>
-							<p class="text-muted">July 26, 2016 &nbsp; | &nbsp; Mukhya of Ashraha</p>
+							<h4 class="head-name">Tahir Ansari </h4>
+							<p class="text-muted">Sarpanch of Asraha</p>
 								<div class="atvImg no-shadow head-poaple-img hidden-xs">
 									<img class="" src="img/asraha1.jpg" alt="">
 									<div class="atvImg-layer"></div>
@@ -226,7 +240,7 @@ $page_title = 'Asraha';
 			
 			<div class="row">
 			  <div class="col-md-8">
-			     <h1 class="title-header text-left">Valuable leaders of Asraha, and there thoughts</h1>
+			     <h1 class="title-header text-left">Some valuable peoples of Asraha</h1>
 			  </div>
 			  <div class="col-md-4">
 			    <div class="bt-sliderbtn pull-right clearfix">
@@ -286,38 +300,38 @@ $page_title = 'Asraha';
 
 	{{-- another --}}
 
-		<div class="container">
-			<div class="spacebox">
-			<h2 class="title-header text-center">Gallery</h2>
-				<div class="text-center  hidden-sm hidden-xs"><img src="img/line.png" alt=""></div>
-			</div>
-			<div class="apporch-box">
-				<div>
-					<div class="segment segment-gallery clearfix">
-						@foreach($galleries as $gallery)
-						<div class="">
-						 	<a href="{{ asset($gallery->image)}}" class="thumbnail _thmb atvImg">
-							<img  src="{{ asset($gallery->image)}}">
-							<div class="atvImg-layer"></div>
-							<div class="atvImg-layer" data-img="{{ asset($gallery->image)}}"></div>
-							</a>
-						</div>
-
-							
-						@endforeach
-
-					</div>
+<div class="container">
+	<div class="spacebox">
+	<h2 class="title-header text-center">Gallery</h2>
+		<div class="text-center  hidden-sm hidden-xs"><img src="img/line.png" alt=""></div>
+	</div>
+	<div class="apporch-box">
+		<div>
+			<div class="segment segment-gallery clearfix">
+				@foreach($galleries as $gallery)
+				<div class="">
+				 	<a href="{{ asset($gallery->image)}}" class="thumbnail _thmb atvImg">
+					<img  src="{{ asset($gallery->image)}}">
+					<div class="atvImg-layer"></div>
+					<div class="atvImg-layer" data-img="{{ asset($gallery->image)}}"></div>
+					</a>
 				</div>
-			</div>
-			<div id="myModal" class="modal fade" role="dialog">
-			  <div class="modal-dialog modal-lg">
-			    	  <span class="close-styled" data-dismiss="modal">&times;</span>
-			    <div class="modal-content">
-			    </div>
-			
-			  </div>
+
+					
+				@endforeach
+
 			</div>
 		</div>
+	</div>
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    	  <span class="close-styled" data-dismiss="modal">&times;</span>
+	    <div class="modal-content">
+	    </div>
+	
+	  </div>
+	</div>
+</div>
 
 	{{-- another END --}}
 
@@ -390,7 +404,31 @@ $page_title = 'Asraha';
 		</div>
 	</div>
 	{{-- contact us END--}}
+		
+			<div id="winner-modal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Modal Header</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>
+			        	आप को हमें न्यूज़ भेजना होगा जिसका  न्यूज़ जयादा
+			        	होगा हम उसे विजेता घोसना करेंगे फिर आपकी फोटो वेबसाइट पर आ जाएगी
+			        	हम विजेता एक हफ्ते में चुनते हैं 
+			        	आप हमें इस न. पर Whatsapp के जरिए न्यूज़ भेज सकते हैं  
+			        </p>
+			        	<b>Note:  अपना नाम और फोटो भी जरूर भेजे ताकि आप अगर विजेता हुए तो हम आप की फोटो वेबसाइट पर लगा सके </b>
+			        	<p><b>Whatsapp no. 7210562014</b></p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
 
+			  </div>
+			</div>
 
 
 @endsection

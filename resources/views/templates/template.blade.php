@@ -1,3 +1,6 @@
+<?php 
+$page_title = 'Web Templates';
+ ?>
 @extends('layouts.master')
 
 @section('content')

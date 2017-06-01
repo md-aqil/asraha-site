@@ -36,7 +36,7 @@
 
     <div class="content-wrapper">
       <div class="container">
-      <a href="" class="home-btn">Home</a>
+      <a href="/" class="home-btn">Home</a>
       <div class="row">
         <div class="col-md-6">
           <h1 class="hi wow fadeInDown">Hello <br class="hidden-xs"> I am <br class="hidden-xs"> Aqil</h1>
@@ -165,7 +165,7 @@
         <div class="row">
           <div class="col-md-4">
             <h1 class="abutmetext" style="top:185px;left: -280;">Skillset</h1>
-            <h1>My Proficiencies</h1>
+            <h1 class="mh2">My Proficiencies</h1>
             <div class="pgl">
             <h3 class="fw300">HTML</h3>
               <div class="progress">
