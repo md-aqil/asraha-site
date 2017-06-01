@@ -338,7 +338,8 @@ $page_title = 'Asraha';
 	
 	         		<li class="clearfix " >
 	         			<div class="r-box pull-left">
-	         				<span class="letter" data-icon="glyphicon glyphicon-earphone"></span>
+	         				<i class="glyphicon glyphicon-earphone" style="font-size: 32px;color: #4d9dd8;"></i>
+    
 	         			</div>
 	         			<div class="pull-left">
 	         				<h4 class="font-light">Phone Number</h4>
@@ -348,23 +349,17 @@ $page_title = 'Asraha';
 	         		</li>
 	         		<li class="clearfix " >
 	         			<div class="r-box pull-left">
-	         				<span class="letter" data-icon="glyphicon glyphicon-envelope"></span>
+	         			<i class="glyphicon glyphicon-envelope" style="font-size: 32px;color: #4d9dd8;"></i>
+    
 	         			</div>
 	         			<div class="pull-left">
-	         				<h4 class="font-light">Phone Number</h4>
-	         				<h4 class="text-md">7210562014</h4>
+	         				<h4 class="font-light">Email</h4>
+	         				<h4 class="text-md">aqilali381@gmail.com</h4>
 	         				
 	         			</div>
 	         		</li>
 	         		<li class="clearfix " >
-	         			<div class="r-box pull-left">
-						<span class="letter" data-icon="glyphicon glyphicon-map-marker"></span>
-	         			</div>
-	         			<div class="pull-left">
-	         				<h4 class="font-light">Phone Number</h4>
-	         				<h4 class="text-md">7210562014</h4>
-	         				
-	         			</div>
+	         			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14311.246902192155!2d85.90096272458739!3d26.267773234551264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb5dfe364fbd1%3A0xe05fae69f613283f!2sAsraha%2C+Bihar+847121!5e0!3m2!1sen!2sin!4v1496320919098" frameborder="0" style="border:0" allowfullscreen></iframe>
 	         		</li>
 	         	</ul>
 	         </div>
