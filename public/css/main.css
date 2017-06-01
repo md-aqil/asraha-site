@@ -1331,3 +1331,16 @@ padding:  10px;
   color: #2185d0;
 
 }
+
+.pgl .progress {
+  height: 5px !important;
+    margin-bottom: 40px !important;
+}
+
+.skil-list li{
+  padding: 15px 0;
+    list-style: square;
+    font-size: 20px;
+    font-weight: 300;
+    color: #f1f1f1;
+}

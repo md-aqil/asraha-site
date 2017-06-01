@@ -1,3 +1,6 @@
+<?php 
+    $page_title = 'Aqil Prtfolio';
+ ?>
 <style>
 	.container-fluid.res-header-desktop {
 		display: none;
@@ -5,15 +8,27 @@
 	.footer {
 		display: none;
 	}
+  .home-btn {
+    color: #adadad;
+    display: inline-block;
+    border: 1px solid #adadad;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  .home-btn:hover {
+    background: #fff;
+    color: #333;
+  }
 </style>
 
 @extends('layouts.master')
 @section('content')
 
-<div class="overflow-hidden">
+<div class="">
   <section class="background bgGreen noise overlay" style="background: url(img/designer.jpeg); background-size: cover;">
     <div class="content-wrapper">
       <div class="container">
+      <a href="" class="home-btn">Home</a>
       <div class="row">
         <div class="col-md-6">
           <h1 class="hi wow fadeInDown">Hello <br> I am <br> Aqil</h1>
@@ -114,12 +129,7 @@
       <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
     </div>
   </section>
-  <section class="background bgLOrange">
-    <div class="content-wrapper">
-      <p class="content-title">Etiam consequat lectus.</p>
-      <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
-    </div>
-  </section>
+ 
   <section class="background bgBlue noise">
     <div class="content-wrapper">
       <div class="container por">
@@ -140,10 +150,86 @@
       </div>
     </div>
   </section>
-  <section class="background bgLGreen">
+
+  <section class="background overlay noise" style="background-image: url(img/skills.jpeg);">
     <div class="content-wrapper">
-      <p class="content-title">Etiam consequat lectus.</p>
-      <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="abutmetext" style="top:185px;left: -280;">Skillset</h1>
+            <h1>My Proficiencies</h1>
+            <div class="pgl">
+            <h3 class="fw300">HTML</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" 
+                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            <h3 class="fw300">CSS</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" 
+                    style="width: 25%; height: 5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+              <h3 class="fw300">javaScript</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" 
+                    style="width: 25%; height: 5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+               <h3 class="fw300">Photoshop</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" 
+                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+               <h3 class="fw300">Illustrator</h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="">&nbsp;</h1>
+
+            <ul class="skil-list">
+              <li>Responsive/Progressive Enhancement/mobile first layouts</li>
+              <li>
+                CSS3 Keyframe, HTML5 Greensock/GSAP, SVG and Canvas animation.
+              </li>
+              <li>
+                Working knowledge of JavaScript and jQuery, PHP & Laravel
+              </li>
+              <li>
+                Boostrap, Materialize, Animate.css, wow.js, scrollMagic  
+              </li>
+             
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h1 class="">What I Use</h1>
+            <ul class="skil-list">
+              <li>Windows or Mac</li>
+              <li>Sublime Text 3, Visual Studio</li>
+              <li>Photoshop, Illustrator, After Effects, Google Web Designer, wireframing - Balsamiq,</li>
+              <li>SASS, Less, Jade, blade, twig, xampp myql</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <section class="background overlay hidden-xs" style="background-image: url(img/designer.jpeg);">
+    <div class="content-wrapper">
+     <div class="container">
+        <div class="atvImg" style="height: 80%">
+           <div class="atvImg-layer" data-img="img/layer4.png"></div>
+           <div class="atvImg-layer" data-img="img/layer2.png"> 
+           </div>
+        </div>
+      </div>
     </div>
   </section>
 </div>
