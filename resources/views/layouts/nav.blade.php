@@ -49,7 +49,7 @@
 <div class="container-fluid por">	
 	<div class="mobile-inner-header res-header-mobile animated visible-sm visible-xs">
 			   <h1 class="pull-left m-logo text-shadow" style="margin-top: 3px;margin-left: 10px;">
-            <a href="index.php">Asraha</a></h1>
+            <a href="/">Asraha</a></h1>
     
 		<div class="mobile-inner-header-icon mobile-inner-header-icon-out ripple">
 				<span></span><span></span>

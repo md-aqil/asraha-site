@@ -82,7 +82,7 @@ $page_title = 'Asraha | Admin';
 				    			</div>
 				    			<div class="form-group clearfix segment">
 				    				<input type="file" name="blog-image" class="pull-left" required>
-				    				<button class="btn btn-primary pull-right">Publish</button>
+				    				<button class="btn btn-primary pull-right loadthis">Publish</button>
 				    			</div>
 				    		</form>
 

@@ -251,4 +251,8 @@ $('.segment-gallery')
             new WOW().init();
 
         });
+
+ $('.loadthis').click(function( ) {
+ 	$(this).button('loading');
+ })
 </script>
