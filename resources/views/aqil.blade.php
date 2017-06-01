@@ -1,7 +1,14 @@
+
 <?php 
     $page_title = 'Aqil Prtfolio';
  ?>
+
+  <link rel="stylesheet" href="/css/component.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" href="/css/paralaxx.css" />
+<link rel="stylesheet" href="/css/mobile.css">
+
 <style>
+
 	.container-fluid.res-header-desktop {
 		display: none;
 	}
@@ -26,12 +33,13 @@
 
 <div class="">
   <section class="background bgGreen noise overlay" style="background: url(img/designer.jpeg); background-size: cover;">
+
     <div class="content-wrapper">
       <div class="container">
       <a href="" class="home-btn">Home</a>
       <div class="row">
         <div class="col-md-6">
-          <h1 class="hi wow fadeInDown">Hello <br> I am <br> Aqil</h1>
+          <h1 class="hi wow fadeInDown">Hello <br class="hidden-xs"> I am <br class="hidden-xs"> Aqil</h1>
           
         </div>
         <div class="col-md-6">
@@ -49,7 +57,7 @@
   <section class="background bgOrange noise">
     <div class="content-wrapper">
         <div class="container">
-        <h1 style="margin-top: 50px;">&nbsp;</h1>
+        <h1 class="hidden-xs" style="margin-top: 50px;">&nbsp;</h1>
           <div class="row">
               <div class="col-md-5">
                 <h1 class="bigheading">

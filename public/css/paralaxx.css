@@ -148,13 +148,7 @@
 .fw100 {
   font-weight: 100;
 }
-.container {
-      width: 1170px;
-      margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 .bgGreen{background-color: #54943f}
 .bgOrange{
   background: #403B4A;  /* fallback for old browsers */
@@ -182,7 +176,6 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
  background: #e6dada; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #e6dada, #274046); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #e6dada, #274046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 
@@ -240,3 +233,4 @@ transform: rotate(90deg);
 .innerdiv100 div{
   height: 100%;
 }
+
