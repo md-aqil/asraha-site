@@ -60,9 +60,10 @@
         <h1 class="hidden-xs" style="margin-top: 50px;">&nbsp;</h1>
           <div class="row">
               <div class="col-md-5">
-                <h1 class="bigheading">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  <span class="fw300">Laborum ut culpa optio officiis quisquam molestias ipsa </span> 
+                <h1 class="bigheading fw300">
+                  Hey! <br>
+                  I am Aqil, a front end developer and Web Designer from Delhi.
+                  I design websites that fit all devices equally perfectly. 
                 </h1>
               </div>
               <div class="col-md-7">
@@ -105,12 +106,12 @@
        <div class="row">
          <div class="col-md-6">
          <div class="aboutbox">
-           <h1 class="abutmetext">About me</h1>
-               <h3 class="fw300 abtpra">
-                 
-                  Computers have been my passion from ever. I could spend hours learning about coding and designing. However, this passion got wings when I grabbed a job as a UI/UX designer and developer. Though money cannot be totally ignored, even if it wasn’t there, I couldn’t be separated from designing and coding. I think I can totally relate to how one feels when one loves what one does :)
-                   
-                   Also, I love to watch English movies and T.V. series and I have recently developed a love for travel, I am looking forward to exploring a lot of new places in the coming years. 
+                 <h1 class="">Wanna know me a tad more?</h1>
+               <h3 class="fw300 abtpra" style="line-height: 1.4">
+                 I come from a small village, named Asraha, located in Bihar.  But I have been living in Delhi since I was 12. So I have learned to be independent from a small age. Living in a big city without parents has also contributed towards enhancing my cooking skills. I can cook almost all that I can eat, except vegetarian food.
+ 
+                    When it comes to education, I believe more in self-learning. I have never been to a designing institute, all that I have learned is by watching online tutorials and by working with a technology company. Though I also believe that self-learning is crippled when you don’t have the passion for something. 
+
                 </h3>
          </div>
          </div>
@@ -124,20 +125,20 @@
   </section>
 
 
- 
+ <!-- 
   <section class="background bgGray">
     <div class="content-wrapper innerdiv100">
     <h1>img here</h1>
-     
     </div>
   </section>
-  <section class="background bg-black">
+   -->
+  <!-- <section class="background bg-black">
     <div class="content-wrapper">
       <p class="content-title">Etiam consequat lectus.</p>
       <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
     </div>
   </section>
- 
+  -->
   <section class="background bgBlue noise">
     <div class="content-wrapper">
       <div class="container por">
