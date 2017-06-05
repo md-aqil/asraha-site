@@ -1,3 +1,8 @@
+
+<?php 
+    $page_title = 'Asraha | Latest News';
+ ?>
+
 @extends('layouts.master')
 
 @section('content')
@@ -34,13 +39,13 @@
 								</div>
 						</div>
 				{{-- comment-form --}}
-						<form method="POST" action="/posts/{{ $post->id }}/comments"  class="form" >
-						{{ csrf_field() }}
+						<form method="POST" action="/posts/{{ $post->id }}/comments" id="save-comment" class="form" >
+							{{ csrf_field() }}
 							<div class="form-group">
 							<textarea name="body" class="form-control" placeholder="Wirte your comment"></textarea>
 							</div>
 							<div class="form-group">
-					  		<button class="viewallbtn">Add Comment</button>
+					  		<button class="viewallbtn loadthis">Add Comment</button>
 							</div>
 							@if(session('success'))
 								<div class="alert alert-danger">{{ session('success') }}

@@ -68,25 +68,34 @@ class PostsController extends Controller
       public function getDeletePost($post_id)
     {
        $post = Post::find($post_id);
-       $post->delete();
+
+       $this->deleteImage($post->name);
+    		$img = $post->image;
+
+	   $this->deleteImage($path);
+     $post->delete();
        // return redirect()->route('blogs.index')
        return back()->with('success', 'Your post has been deleted!');
     }
 
+	
 
     function deleteFront($id) {
        $front = Front::find($id);
+       $this->deleteImage($front->image);
        $front->delete();
        return back()->with('success', 'Your post has been deleted!');
     } 
     function deletevaluable($id) {
        $valuable = valuable::find($id);
+       $this->deleteImage($valuable->image);
        $valuable->delete();
        return back()->with('success', 'Your post has been deleted!');
     }
 
      function deletegallery($id) {
        $gallery = Gallery::find($id);
+       $this->deleteImage($gallery->image);
        $gallery->delete();
        return back()->with('success', 'Your gallery has been deleted!');
     }

@@ -90,6 +90,7 @@ class WinnerController extends Controller
     public function destroy($id)
     {
         $winner = Winner::find($id);
+        $this->deleteImage($winner->image);
        $winner->delete();
        return back()->with('success', 'Your Winner has been deleted!');
     }

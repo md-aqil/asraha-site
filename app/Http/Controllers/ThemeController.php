@@ -99,6 +99,7 @@ class ThemeController extends Controller
     public function destroy($id)
     {
           $theme = Theme::find($id);
+          $this->deleteImage($theme->thumb);
        $theme->delete();
        return back()->with('success', 'Your web template has been deleted!');
     }

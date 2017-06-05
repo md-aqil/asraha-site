@@ -1,4 +1,6 @@
-	
+<?php 
+    $page_title = 'Asraha | All News';
+ ?>	
 @extends('layouts.master')
 
 @section('content')

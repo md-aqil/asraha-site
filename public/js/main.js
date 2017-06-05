@@ -67,7 +67,7 @@ var ticking = false;
       var el = document.querySelector( '.md-slider' ),
         settings = {
           autoplay : true,
-          interval : 100000,
+          interval : 1000,
           devices : [ 
             { cName : 'md-device-1', canRotate : false, imgsrc : 'img/site1.jpg' },
             { cName : 'md-device-2', canRotate : false, imgsrc : 'img/site2.jpg' },
