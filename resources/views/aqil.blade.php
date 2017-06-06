@@ -50,6 +50,9 @@
             </div>
         </div>
       </div>
+      <div class="text-center"> 
+          <a href="/img/resume.pdf" class="home-btn" download>Download Resume</a>
+      </div>
       </div>
     </div>
   </section>
@@ -125,13 +128,55 @@
   </section>
 
 
- <!-- 
-  <section class="background bgGray">
-    <div class="content-wrapper innerdiv100">
-    <h1>img here</h1>
+ 
+  <section class="background bgGray noise">
+    <div class="content-wrapper">
+      <div class="container">
+        <h1 class="bigheading fw300">See My Work</h1>
+        <div class="row">
+          <div class="col-md-3"> 
+              <div class="wbox"> 
+                <a href="http://www.edunuts.com/" target="_blank">
+                    <img src="img/edunuts.png" alt="">
+                </a>
+              </div>
+          </div>
+            <div class="col-md-3"> 
+              <div class="wbox">  
+                 <a href="http://www.edunuts.com/academy/" target="_blank">
+                     <img src="img/eacademy.png" alt="">
+                 </a>
+              </div>
+          </div>
+            <div class="col-md-3"> 
+              <div class="wbox">  
+                  <a href="http://biglytech.net/" target="_blank">
+                      <img src="img/bigly.png" alt="">
+                  </a>
+              </div>
+            </div>
+           <div class="col-md-3"> 
+              <div class="wbox">  
+                  <a href="http://asraha.com" target="_blank">
+                      <img src="img/asr.png" alt="">
+                  </a>
+              </div>
+            </div>
+            <div class="col-md-3"> 
+              <div class="wbox">  
+                  <a href="http://bigradar.io/" target="_blank">
+                      <img src="img/bigradar.png" alt="">
+                  </a>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
     </div>
   </section>
-   -->
+  
+
   <!-- <section class="background bg-black">
     <div class="content-wrapper">
       <p class="content-title">Etiam consequat lectus.</p>
