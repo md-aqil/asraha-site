@@ -109,7 +109,7 @@ $page_title = 'Asraha';
 
 
 						<div class="col-md-12 visible-xs">
-							<a href="/posts/" class="modal-btn-round mt20 btn-block ripple">View All  <span style="font-size: 18px;"> &nbsp; &#8594;</span></a>
+							<a href="{{ route('posts.allposts')}}" class="modal-btn-round mt20 btn-block ripple loadthis">View All  <span style="font-size: 18px;"> &nbsp; &#8594;</span></a>
 						</div>
 					</div>
 			</div>
@@ -395,7 +395,7 @@ $page_title = 'Asraha';
 	                    <textarea class="form-control material-input "  type="text" name="" id="" rows="3" required placeholder="Type Your massege here"></textarea>
 	                      
 	                  </div>
-	              		<button class="modal-btn-round ripple">Submit</button>
+	              		<button class="modal-btn-round ripple loadthis">Submit</button>
 	                </form> 
 	
 	        </div>

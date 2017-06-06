@@ -508,7 +508,7 @@ background: none;
 /*blog*/
 .blog-content-box {
 	width: 100%;
-	height: 100px;
+	min-height: 100px;
 	overflow: hidden;
 }
 .blog-list {
@@ -536,6 +536,10 @@ background: none;
     font-weight: 700;
     color: #646FB0;
     font-size: 20px;
+}
+.panel.panel-blog img{
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .news-photos >img {
@@ -873,12 +877,16 @@ img.bordered {
     border-top-right-radius: 3px;
 }
 .panel-blog p{
-
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.010em;
     line-height: 1.6em;
     margin-bottom: 0;
+        max-height: 250px;
+    overflow: hidden;
+}
+.media-list.side-posts .media-heading {
+  margin-top:   8px;
 }
 a.text-black {
    color: #000 !important;
