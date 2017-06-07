@@ -89,7 +89,7 @@ body {
 .main-img-box {
 	max-width: 100%;
 	position: relative;
-  height: 550px;
+  height: 100vh;
 }
 .main-img-box .slide-it {
 	width: 100%;
@@ -982,12 +982,9 @@ a.text-black {
 @media (max-width: 767px) {
   .main-title {
   	font-size: 48px;
-    margin-top: 225px;
 
   }
-  .main-img-box {
-    height: 500px;
-  }
+  
   .pager {
       margin-top: -134px;
   }

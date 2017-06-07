@@ -12,7 +12,7 @@ $page_title = 'Asraha';
 
 		<div class="cycle-slideshow"
 			  data-cycle-fx="scrollHorz" 
-		    data-cycle-timeout="200000"
+		    data-cycle-timeout="3000"
 		     data-cycle-speed="600"
 		     data-cycle-prev="#prev"
 		 	data-cycle-next="#next"
