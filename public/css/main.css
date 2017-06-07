@@ -523,6 +523,9 @@ background: none;
 	min-height: 100px;
 	overflow: hidden;
 }
+.blog-content-box.front {
+  height: 100px;
+}
 .blog-list {
 	padding: 0;
 	list-style: none;
