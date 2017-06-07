@@ -552,6 +552,10 @@ background: none;
     color: #646FB0;
     font-size: 20px;
 }
+.panel.panel-blog img{
+    max-height: 200px;
+    object-fit: cover;
+}
 
 .news-photos >img {
   width: 100%;
@@ -888,12 +892,16 @@ img.bordered {
     border-top-right-radius: 3px;
 }
 .panel-blog p{
-
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.010em;
     line-height: 1.6em;
     margin-bottom: 0;
+        max-height: 250px;
+    overflow: hidden;
+}
+.media-list.side-posts .media-heading {
+  margin-top:   8px;
 }
 a.text-black {
    color: #000 !important;
