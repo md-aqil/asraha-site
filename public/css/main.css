@@ -520,8 +520,11 @@ background: none;
 /*blog*/
 .blog-content-box {
 	width: 100%;
-	height: 100px;
+	min-height: 100px;
 	overflow: hidden;
+}
+.blog-content-box.front {
+  height: 100px;
 }
 .blog-list {
 	padding: 0;

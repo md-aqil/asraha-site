@@ -95,7 +95,7 @@ $page_title = 'Asraha';
 
 								<p class="text-muted">{{$post->created_at->toFormattedDateString() }} By: {{ $post->author }}</p>
 								<hr class="hr-dashed" />
-									<div class="blog-content-box">
+									<div class="blog-content-box front">
 										<p class="abh text-black">
 											{{ $post->body }}
 										</p>
