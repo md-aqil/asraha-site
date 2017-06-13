@@ -46,7 +46,7 @@
 <script>
 	$('.big-icon').click(function(e) {
 		 e.preventDefault();
-		$('.sharbox').toggleClass('thisshare');
+		 $(this).parent('.sharbox').toggleClass('thisshare');
 	})
 </script>
 
