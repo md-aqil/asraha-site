@@ -1360,3 +1360,37 @@ padding:  10px;
     font-weight: 300;
     color: #f1f1f1;
 }
+
+.sicon  {
+  position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 17px;
+    top: -64px;
+    border-radius: 50%;
+    transition: all .4s;
+    line-height: 45px;
+    text-align: center;
+}
+.sicon img {
+   width:   22px;
+}
+.sicon.fb {
+  background: #475993;
+}
+.sicon.w {
+  background: #00e676;
+}
+.blur {
+  -webkit-filter: url("#blur");
+          filter: url("#blur");
+}
+.sharbox {
+   position: relative;
+}
+.sharbox.thisshare .sicon.fb {
+    transform: translate(0, -55px);
+}
+.sharbox.thisshare .sicon.w {
+    transform: translate(0, -110px);
+}
