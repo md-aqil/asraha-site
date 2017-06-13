@@ -44,9 +44,11 @@
 
 </script>
 <script>
-	
-
-        
+	$('.big-icon').click(function(e) {
+		 e.preventDefault();
+		 $(this).parent('.sharbox').toggleClass('thisshare');
+	})
 </script>
+
 </body>
 </html>
