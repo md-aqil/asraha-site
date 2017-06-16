@@ -2,7 +2,7 @@
 <?php 
     $pageTitle = $post->title . ' | Asraha.com';
     $metaDesc = $post->body;
-    $metaImg = $post->image;
+    $metaImg = asset($post->image);
  ?>
 
 @extends('layouts.master')
