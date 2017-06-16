@@ -16,7 +16,11 @@
 	<link rel="shortcut icon" href="/img/favicon.png">
 	
 	<link rel="stylesheet" href="/css/main.css">
-
+	<meta property="og:url"           content="{{ Request::url() }}" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Asraha" />
+	<meta property="og:description"   content="Your description" />
+	<meta property="og:image"         content="{{ asset('img/sitelogo.png') }}" />
 	
 </head> 
 
@@ -48,6 +52,17 @@
 		 e.preventDefault();
 		 $(this).parent('.sharbox').toggleClass('thisshare');
 	})
+</script>
+<script>
+	$('.link-share').click(function(e) {
+		e.preventDefault();
+		let link = $(this).attr('href');	
+		openWindow(link);
+	});
+	function openWindow(link) {
+		link = 'https://www.facebook.com/sharer/sharer.php?u=' + link;
+		var win = window.open(link, 'fb-share', "width=400,height=400");
+	}
 </script>
 
 </body>

@@ -5,7 +5,8 @@
 					<div class="container">
 					<div class="col-md-4">
 						<a href="/" class="logo-text">Asraha</a>
-					</div>
+						</div>
+					
 					<div class="col-md-8">
 						<ul class="list-inline footer-list">
 							<li><a href="/">Home</a></li>
@@ -26,7 +27,7 @@
 						<div class="col-md-4 text-center">
 							<ul class="list-inline fsocial">
 								<li>
-									<a href="https://www.facebook.com/profile.php?id=100011049845433" target="_blank">
+									<a class="link-share" href="{{ Request::url() }}">
 										<img src="/img/facebook.png" alt="">
 									</a>
 								</li>

@@ -90,9 +90,10 @@ $page_title = 'Asraha';
 	      		<div class="sharbox blur">
   				<a href="" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
 	      			<div class="sicon fb">
-	      				<img src="/img/facebook-logo.svg" alt="">
+	      				<a class="link-share" href="{{ url('posts/' . $post->id ) }}">
+	      				<img src="/img/facebook-logo.svg" alt=""></a>
 	      			</div>
-	      			<div class="sicon w"><img style="margin-top:-4px;" src="/img/whatsapp-logo.svg" alt=""></div>
+	      			<!-- <div class="sicon w"><img style="margin-top:-4px;" src="/img/whatsapp-logo.svg" alt=""></div> -->
 	      		</div>
 	     </div>
 	     
@@ -156,10 +157,7 @@ $page_title = 'Asraha';
 							{{ $winner->winner_msg or "" }}
 						</p>
 						<ul class="list-inline wsosial">
-							<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>
-							<li><a href=""><img style="margin-top: -6px;" src="/img/whatsapp.png" alt=""></a></li>
-							<li><a href=""><img src="/img/twitter.png" alt=""></a></li>
-							<li>
+							<li><a class="link-share" href="{{ Request::url() }}"><img src="/img/facebook.png" alt=""></a></li>
 							
 						</ul>
 					</div>
