@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<meta property="og:type"          content="website" />
 	<meta property="og:url"           content="{{ $metaUrl or Request::url() }}" />
-	<meta property="og:title"         content="{{ $pageTitle or '' }}" />
+	<meta property="og:title"         content="{{ $pageTitle or 'Asraha.com' }}" />
 	<meta property="og:description"   content="{{ $metaDesc or '' }}" />
 	<meta property="og:image"         content="{{ $metaImg or '' }}" />
 	

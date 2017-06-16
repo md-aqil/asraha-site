@@ -1,8 +1,6 @@
 
 <?php 
-    $pageTitle = 'Asraha.com';
-    $metaDesc = $fronts->first()->body;
-    $metaImg = $post->image;
+   
  ?>
 
 @extends('layouts.master')
