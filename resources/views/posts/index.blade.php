@@ -90,7 +90,7 @@ $page_title = 'Asraha';
 	      		<div class="sharbox blur">
   				<a href="" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
 	      			<div class="sicon fb">
-	      				<a class="link-share" href="{{ Request::url() }}">
+	      				<a class="link-share" href="{{ url('posts/' . $post->id ) }}">
 	      				<img src="/img/facebook-logo.svg" alt=""></a>
 	      			</div>
 	      			<!-- <div class="sicon w"><img style="margin-top:-4px;" src="/img/whatsapp-logo.svg" alt=""></div> -->
