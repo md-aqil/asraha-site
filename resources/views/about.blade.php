@@ -1,5 +1,5 @@
 <?php 
-    $page_title = 'Asraha | About';
+    $pageTitle = 'About | Asraha.com';
  ?>
 
 @extends('layouts.master')

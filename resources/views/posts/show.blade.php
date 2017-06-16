@@ -1,6 +1,8 @@
 
 <?php 
-    $page_title = 'Asraha | Latest News';
+    $pageTitle = $post->title . ' | Asraha.com';
+    $metaDesc = $post->body;
+    $metaImg = $post->image;
  ?>
 
 @extends('layouts.master')

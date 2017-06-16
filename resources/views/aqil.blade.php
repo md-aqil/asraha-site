@@ -1,6 +1,6 @@
-
 <?php 
-    $page_title = 'Aqil Prtfolio';
+    $pageTitle = 'Aqil | Asraha.com';
+   
  ?>
 
   <link rel="stylesheet" href="/css/component.css">
