@@ -39,7 +39,7 @@
 
 @extends('layouts.master')
 @section('content')
-    <div style="position: fixed;
+    <div class="hidden-xs" style="position: fixed;
     z-index: 1000;
     right: 40px;
     top: 45%;
