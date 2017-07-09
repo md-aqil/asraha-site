@@ -7,6 +7,7 @@ var ticking = false;
   var totalSlideNumber = $(".background").length;
 
   // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
+
   function parallaxScroll(evt) {
     if (isFirefox) {
       //Set delta for Firefox
@@ -63,6 +64,28 @@ var ticking = false;
     $currentSlide.removeClass("down-scroll").addClass("up-scroll");
   }
 
+
+$('[data-action]').click(function() {
+
+  switch( $(this).data('action') ) {
+    case 'next':
+      if (currentSlideNumber !== totalSlideNumber - 1) {
+        currentSlideNumber++;
+        nextItem();
+      }
+      break;
+    case 'prev':
+     if (currentSlideNumber !== 0) {
+          currentSlideNumber--;
+      }
+      previousItem();
+     
+      break;
+  }
+
+});
+
+
 // svgmorphing starta here====================================================
       var el = document.querySelector( '.md-slider' ),
         settings = {
@@ -107,3 +130,5 @@ var ticking = false;
       if( settings.autoplay ) {
         ds.startSlideshow();
       }
+
+

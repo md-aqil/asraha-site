@@ -30,12 +30,25 @@
 
 @extends('layouts.master')
 @section('content')
+    <div style="position: fixed;
+    z-index: 1000;
+    right: 40px;
+    top: 45%;
+    cursor: pointer;
+    ">
+         <a class="home-btn" data-action="next" style="display: block;
+    margin-bottom: 30px;">NEXT</a>
+        <a class="home-btn" data-action="prev">PREV</a>
+      </div>
 
 <div class="">
+
   <section class="background bgGreen noise overlay" style="background: url(img/designer.jpeg); background-size: cover;">
 
     <div class="content-wrapper">
       <div class="container">
+
+
       <a href="/" class="home-btn">Home</a>
       <div class="row">
         <div class="col-md-6">
@@ -52,6 +65,7 @@
       </div>
       <div class="text-center"> 
           <a href="/img/resume.pdf" class="home-btn" download>Download Resume</a>
+
       </div>
       </div>
     </div>
