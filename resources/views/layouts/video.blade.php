@@ -37,10 +37,8 @@
 							video information
 						</p>
 						<ul class="list-inline wsosial">
-							<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>
-							<li><a href=""><img style="margin-top: -6px;" src="/img/whatsapp.png" alt=""></a></li>
-							<li><a href=""><img src="/img/twitter.png" alt=""></a></li>
-							<li>
+							<li><a class="link-share" href="{{ Request::url() }}"><img src="/img/facebook.png" alt=""></a></li>
+							
 							
 						</ul>
 					</div>

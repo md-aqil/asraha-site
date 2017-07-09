@@ -1,6 +1,8 @@
 
 <?php 
-    $page_title = 'Asraha | Latest News';
+    $pageTitle = $post->title . ' | Asraha.com';
+    $metaDesc = $post->body;
+    $metaImg = asset($post->image);
  ?>
 
 @extends('layouts.master')
@@ -31,6 +33,14 @@
 							<p class="text-muted">{{$post->created_at->toFormattedDateString() }}  &nbsp; | &nbsp; {{ $post->author }}</p>
 							<div class="lstsn">
 								<img  src="{{ asset($post->image)}}">
+								<div class="sharbox blur">
+  				<a href="" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
+	      			<div class="sicon fb">
+	      				<a class="link-share" href="{{ url('posts/' . $post->id ) }}">
+	      				<img  style="height: 22px;" src="/img/facebook-logo.svg" alt=""></a>
+	      			</div>
+	      			
+	      		</div>
 							</div>
 					  		<div class="blog-content-box">
 							  		 <p class="abh text-black">

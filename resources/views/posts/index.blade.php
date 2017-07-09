@@ -1,6 +1,10 @@
+
 <?php 
-$page_title = 'Asraha';
+    $pageTitle = 'Asraha.com';
+    $metaDesc = $fronts->first()->body;
+    $metaImg = asset($fronts->first()->image);
  ?>
+
 @extends('layouts.master')
 
 @section('content')
@@ -12,7 +16,7 @@ $page_title = 'Asraha';
 
 		<div class="cycle-slideshow"
 			  data-cycle-fx="scrollHorz" 
-		    data-cycle-timeout="200000"
+		    data-cycle-timeout="3000"
 		     data-cycle-speed="600"
 		     data-cycle-prev="#prev"
 		 	data-cycle-next="#next"
@@ -83,19 +87,27 @@ $page_title = 'Asraha';
 						<div class="col-md-6 postindex">
 							<div class="row">
 								<div class="col-md-5">
-										<div class="por">
-								     <div class="news-photos"><img  src="{{ asset($post->image)}}"></div>
-								      		<div class="this-overlay2 newslink"> </div>
-				              				<a href="/posts/{{$post->id}}" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
-								     </div>
-								     
+
+			<div class="por">
+	     <div class="news-photos"><img  src="{{ asset($post->image)}}"></div>
+	      		<div class="this-overlay2 newslink"> </div>
+	      		<div class="sharbox blur">
+  				<a href="" class="big-icon cdb" tooltip" title="Click to view all!" >+</a>
+	      			<div class="sicon fb">
+	      				<a class="link-share" href="{{ url('posts/' . $post->id ) }}">
+	      				<img src="/img/facebook-logo.svg" alt=""></a>
+	      			</div>
+	      			<!-- <div class="sicon w"><img style="margin-top:-4px;" src="/img/whatsapp-logo.svg" alt=""></div> -->
+	      		</div>
+	     </div>
+	     
 								</div>
 								<div class="col-md-7">
 								<h3 class="news-header"><a href="/posts/{{$post->id}}">{{ $post->title }}</a></h3>
 
 								<p class="text-muted">{{$post->created_at->toFormattedDateString() }} By: {{ $post->author }}</p>
 								<hr class="hr-dashed" />
-									<div class="blog-content-box">
+									<div class="blog-content-box front">
 										<p class="abh text-black">
 											{{ $post->body }}
 										</p>
@@ -149,10 +161,7 @@ $page_title = 'Asraha';
 							{{ $winner->winner_msg or "" }}
 						</p>
 						<ul class="list-inline wsosial">
-							<li><a href="https://developers.facebook.com/docs/plugins/"><img src="/img/facebook.png" alt=""></a></li>
-							<li><a href=""><img style="margin-top: -6px;" src="/img/whatsapp.png" alt=""></a></li>
-							<li><a href=""><img src="/img/twitter.png" alt=""></a></li>
-							<li>
+							<li><a class="link-share" href="{{ Request::url() }}"><img src="/img/facebook.png" alt=""></a></li>
 							
 						</ul>
 					</div>
@@ -430,5 +439,14 @@ $page_title = 'Asraha';
 			  </div>
 			</div>
 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			  <defs>
+			    <filter id="blur">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"></feGaussianBlur>
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo"></feColorMatrix>
+			      <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+			    </filter>
+			  </defs>
+			</svg>
 
 @endsection

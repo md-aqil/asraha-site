@@ -1,6 +1,6 @@
-
 <?php 
-    $page_title = 'Aqil Prtfolio';
+    $pageTitle = 'Aqil | Asraha.com';
+   
  ?>
 
   <link rel="stylesheet" href="/css/component.css">
@@ -26,6 +26,15 @@
     background: #fff;
     color: #333;
   }
+  .wbox {
+        margin-top: 20px;
+}
+.wbox img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
 </style>
 
 @extends('layouts.master')
@@ -63,7 +72,7 @@
             </div>
         </div>
       </div>
-      <div class="text-center"> 
+      <div class="text-center _mbfix"> 
           <a href="/img/resume.pdf" class="home-btn" download>Download Resume</a>
 
       </div>
@@ -148,35 +157,35 @@
       <div class="container">
         <h1 class="bigheading fw300">See My Work</h1>
         <div class="row">
-          <div class="col-md-3"> 
+          <div class="col-md-3 col-xs-6"> 
               <div class="wbox"> 
                 <a href="http://www.edunuts.com/" target="_blank">
                     <img src="img/edunuts.png" alt="">
                 </a>
               </div>
           </div>
-            <div class="col-md-3"> 
+            <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                  <a href="http://www.edunuts.com/academy/" target="_blank">
                      <img src="img/eacademy.png" alt="">
                  </a>
               </div>
           </div>
-            <div class="col-md-3"> 
+            <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://biglytech.net/" target="_blank">
                       <img src="img/bigly.png" alt="">
                   </a>
               </div>
             </div>
-           <div class="col-md-3"> 
+           <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://asraha.com" target="_blank">
                       <img src="img/asr.png" alt="">
                   </a>
               </div>
             </div>
-            <div class="col-md-3"> 
+            <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://bigradar.io/" target="_blank">
                       <img src="img/bigradar.png" alt="">
