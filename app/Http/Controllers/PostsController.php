@@ -18,7 +18,7 @@ class PostsController extends Controller
       $fronts = Front::all();
       $valuables = valuable::all();
       $galleries = Gallery::all();
-      $videos = Video::all();
+      $videos = Video::latest()->get();
      
       $winner = Winner::latest()->first();
     	return view('posts.index', compact('posts', 'fronts', 'valuables', 'galleries', 'winner', 'videos'));
