@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Asraha site help people to find news around darbhanga, and there are some motivational motivational video to stay motivated">
+    <meta name="author" content="md aqil">
+    <meta name="keywords", content="asraha, www.asraha.com, Asraha.com. Asraha, md-aqil,
+    aqil, md aqil, asraha news, darbhanga news, keoti, keoti news, motivational, asraha site, india, about india, beatiful india site, great india site, mukhya of asraha, Sarpanch of Asraha, Panchayat Samiti of asraha">
     
 	<link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" href="/css/bootstrap.css">
