@@ -1,8 +1,13 @@
 
 <?php 
     $pageTitle = 'Asraha.com';
-    $metaDesc = $fronts->first()->body;
-    $metaImg = asset($fronts->first()->image);
+    $front = $fronts->first();
+    $metaImg = null;
+    $metaDesc = null;
+    if($front) {
+    	$metaDesc = $front->body;
+    	$metaImg = asset($front->image );
+    }
  ?>
 
 @extends('layouts.master')

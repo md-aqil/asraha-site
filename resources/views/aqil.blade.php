@@ -35,6 +35,16 @@
     object-fit: cover;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
+.wbox p {
+  color: #fff;
+  text-align: center;
+}
+.see-my-work {
+
+}
+.container.see-my-work{
+  overflow-y: auto;
+}
 </style>
 
 @extends('layouts.master')
@@ -154,13 +164,14 @@
  
   <section class="background bgGray noise">
     <div class="content-wrapper">
-      <div class="container">
+      <div class="container see-my-work">
         <h1 class="bigheading fw300">See My Work</h1>
         <div class="row">
           <div class="col-md-3 col-xs-6"> 
               <div class="wbox"> 
                 <a href="http://www.edunuts.com/" target="_blank">
                     <img src="img/edunuts.png" alt="">
+                    <p>Edunuts</p>
                 </a>
               </div>
           </div>
@@ -168,6 +179,7 @@
               <div class="wbox">  
                  <a href="http://www.edunuts.com/academy/" target="_blank">
                      <img src="img/eacademy.png" alt="">
+                     <p>Edunuts Academy</p>
                  </a>
               </div>
           </div>
@@ -175,6 +187,7 @@
               <div class="wbox">  
                   <a href="http://biglytech.net/" target="_blank">
                       <img src="img/bigly.png" alt="">
+                        <p>Bigly</p>
                   </a>
               </div>
             </div>
@@ -182,6 +195,7 @@
               <div class="wbox">  
                   <a href="http://asraha.com" target="_blank">
                       <img src="img/asr.png" alt="">
+                      <p>Asraha</p>
                   </a>
               </div>
             </div>
@@ -189,9 +203,67 @@
               <div class="wbox">  
                   <a href="http://bigradar.io/" target="_blank">
                       <img src="img/bigradar.png" alt="">
+                      <p>Bigradar</p>
                   </a>
               </div>
-            </div>
+            </div>    
+            <div class="col-md-3 col-xs-6"> 
+              <div class="wbox">  
+                  <a href="http://nmicanada.com/NMI/" target="_blank">
+                      <img src="img/NMI-Canada.jpg" alt="">
+                      <p>NMI Canada</p>
+                  </a>
+              </div>
+            </div>  
+              <div class="col-md-3 col-xs-6"> 
+              <div class="wbox">  
+                  <a href="http://kursy.co.in/" target="_blank">
+                      <img src="img/kursy.jpg" alt="">
+                      <p>Kursy</p>
+                  </a>
+              </div>
+            </div>  
+            <div class="col-md-3 col-xs-6"> 
+              <div class="wbox">  
+                  <a href="http://www.sketchut.com/" target="_blank">
+                      <img src="img/sketchut.jpg" alt="">
+                      <p>Sketchut</p>
+                  </a>
+              </div>
+            </div>  
+          <div class="col-md-3 col-xs-6"> 
+              <div class="wbox">  
+                  <a href="http://asraha.com/india" target="_blank">
+                      <img src="img/india.jpg" alt="">
+                      <p>Asraha/India</p>
+                  </a>
+              </div>
+            </div>  
+              <div class="col-md-3 col-xs-6"> 
+                <div class="wbox">  
+                    <a href="http://www.justdesk.in/" target="_blank">
+                        <img src="img/justdesk.jpg" alt="">
+                        <p>Just Desk</p>
+                    </a>
+                </div>
+            </div>    
+            <div class="col-md-3 col-xs-6"> 
+                <div class="wbox">  
+                    <a href="http://www.dmadelhi.com/" target="_blank">
+                        <img src="img/dmadelhi.jpg" alt="">
+                        <p>DMA Delhi</p>
+                    </a>
+                </div>
+            </div>  
+           <div class="col-md-3 col-xs-6"> 
+                <div class="wbox">  
+                    <a href="http://biglytech.net:1122/" target="_blank">
+                        <img src="img/Centigrademedia.jpg" alt="">
+                        <p>Centigrademedia</p>
+                    </a>
+                </div>
+            </div>  
+
 
           </div>
       </div>
