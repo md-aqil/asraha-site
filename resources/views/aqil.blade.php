@@ -98,7 +98,7 @@
               <div class="col-md-5">
                 <h1 class="bigheading fw300">
                   Hey! <br>
-                  I am Aqil, a front end developer and Web Designer from Delhi.
+                  I am front end developer and Web Designer from Delhi.
                   I design websites that fit all devices equally perfectly. 
                 </h1>
               </div>
