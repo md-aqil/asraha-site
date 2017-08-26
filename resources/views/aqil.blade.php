@@ -170,7 +170,7 @@
           <div class="col-md-3 col-xs-6"> 
               <div class="wbox"> 
                 <a href="http://www.edunuts.com/" target="_blank">
-                    <img src="img/edunuts.png" alt="">
+                    <img src="portfolio-img/edunuts.png" alt="">
                     <p>Edunuts</p>
                 </a>
               </div>
@@ -178,7 +178,7 @@
             <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                  <a href="http://www.edunuts.com/academy/" target="_blank">
-                     <img src="img/eacademy.png" alt="">
+                     <img src="portfolio-img/eacademy.png" alt="">
                      <p>Edunuts Academy</p>
                  </a>
               </div>
@@ -186,7 +186,7 @@
             <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://biglytech.net/" target="_blank">
-                      <img src="img/bigly.png" alt="">
+                      <img src="portfolio-img/bigly.png" alt="">
                         <p>Bigly</p>
                   </a>
               </div>
@@ -194,7 +194,7 @@
            <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://asraha.com" target="_blank">
-                      <img src="img/asr.png" alt="">
+                      <img src="portfolio-img/asr.png" alt="">
                       <p>Asraha</p>
                   </a>
               </div>
@@ -202,7 +202,7 @@
             <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://bigradar.io/" target="_blank">
-                      <img src="img/bigradar.png" alt="">
+                      <img src="portfolio-img/bigradar.png" alt="">
                       <p>Bigradar</p>
                   </a>
               </div>
@@ -210,7 +210,7 @@
             <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://nmicanada.com/NMI/" target="_blank">
-                      <img src="img/NMI-Canada.jpg" alt="">
+                      <img src="portfolio-img/NMI-Canada.jpg" alt="">
                       <p>NMI Canada</p>
                   </a>
               </div>
@@ -218,7 +218,7 @@
               <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://kursy.co.in/" target="_blank">
-                      <img src="img/kursy.jpg" alt="">
+                      <img src="portfolio-img/kursy.jpg" alt="">
                       <p>Kursy</p>
                   </a>
               </div>
@@ -226,7 +226,7 @@
             <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://www.sketchut.com/" target="_blank">
-                      <img src="img/sketchut.jpg" alt="">
+                      <img src="portfolio-img/sketchut.jpg" alt="">
                       <p>Sketchut</p>
                   </a>
               </div>
@@ -234,7 +234,7 @@
           <div class="col-md-3 col-xs-6"> 
               <div class="wbox">  
                   <a href="http://asraha.com/india" target="_blank">
-                      <img src="img/india.jpg" alt="">
+                      <img src="portfolio-img/india.jpg" alt="">
                       <p>Asraha/India</p>
                   </a>
               </div>
@@ -242,7 +242,7 @@
               <div class="col-md-3 col-xs-6"> 
                 <div class="wbox">  
                     <a href="http://www.justdesk.in/" target="_blank">
-                        <img src="img/justdesk.jpg" alt="">
+                        <img src="portfolio-img/justdesk.jpg" alt="">
                         <p>Just Desk</p>
                     </a>
                 </div>
@@ -250,7 +250,7 @@
             <div class="col-md-3 col-xs-6"> 
                 <div class="wbox">  
                     <a href="http://www.dmadelhi.com/" target="_blank">
-                        <img src="img/dmadelhi.jpg" alt="">
+                        <img src="portfolio-img/dmadelhi.jpg" alt="">
                         <p>DMA Delhi</p>
                     </a>
                 </div>
@@ -258,7 +258,7 @@
            <div class="col-md-3 col-xs-6"> 
                 <div class="wbox">  
                     <a href="http://biglytech.net:1122/" target="_blank">
-                        <img src="img/Centigrademedia.jpg" alt="">
+                        <img src="portfolio-img/Centigrademedia.jpg" alt="">
                         <p>Centigrademedia</p>
                     </a>
                 </div>
