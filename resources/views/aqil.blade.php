@@ -369,7 +369,7 @@
 
             </li>
               <li>
-               <h4 class="fw300">Date</h4>
+               <h4 class="fw300">Self Employed</h4>
                   <h2 class="fw300">freelance</h2>
                    <p class="lead freelance-list">
                     
