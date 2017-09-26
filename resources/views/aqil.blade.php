@@ -45,6 +45,48 @@
 .container.see-my-work{
   overflow-y: auto;
 }
+
+.fsocial.profile li a {
+    
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 20px;
+}
+.exp-time {
+  list-style: none;
+    border-left: 2px solid #fff;
+    margin-left: 0;
+    padding-left: 20px;
+    margin-left: 100px;
+}
+.exp-time li {
+    position: relative;
+  margin-bottom: 50px;
+}
+.exp-time li:before {
+ content: '';
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: -26px;
+}
+.freelance-list a {
+  color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    padding: 4px;
+    font-size: 20px;
+}
+.freelance-list a:hover {
+  background: #fff;
+  color: #000;
+}
+
 </style>
 
 @extends('layouts.master')
@@ -90,76 +132,7 @@
     </div>
   </section>
 
-  <section class="background bgOrange noise">
-    <div class="content-wrapper">
-        <div class="container">
-        <h1 class="hidden-xs" style="margin-top: 50px;">&nbsp;</h1>
-          <div class="row">
-              <div class="col-md-5">
-                <h1 class="bigheading fw300">
-                  Hey! <br>
-                  I am front end developer and Web Designer from Delhi.
-                  I design websites that fit all devices equally perfectly. 
-                </h1>
-              </div>
-              <div class="col-md-7">
-                <div class="demo-1">
-                  <!-- a low-tech hack for pre-loading the img -->
-                  <div class="preload" style="overflow: hidden; width: 0px; height: 0px">
-                    <img src="img/site1.jpg" />
-                    <img src="img/site2.jpg" />
-                    <img src="img/site3.jpg" />
-                    <img src="img/site3r.jpg" />
-                    <img src="img/site4.jpg" />
-                    <img src="img/site4r.jpg" />
-                  </div>
-                  <!-- Top Navigation -->
-                
-                  <div class="main clearfix">
-                    <div class="md-slider">
-                      <div class="md-device-wrapper">
-                        <div class="md-device md-device-1">
-                          <a href="#"><img src="img/site1.jpg" /></a>
-                          <div class="md-border-element"></div>
-                          <div class="md-base-element"></div>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-    </div>
-  </section>
-
-
-
-  <section class="background  bgBlue noise">
-    <div class="content-wrapper">
-     <div class="container por">
-       <div class="row">
-         <div class="col-md-6">
-         <div class="aboutbox">
-                 <h1 class="">Wanna know me a tad more?</h1>
-               <h3 class="fw300 abtpra" style="line-height: 1.4">
-                 I come from a small village, named Asraha, located in Bihar.  But I have been living in Delhi since I was 12. So I have learned to be independent from a small age. Living in a big city without parents has also contributed towards enhancing my cooking skills. I can cook almost all that I can eat, except vegetarian food.
  
-                    When it comes to education, I believe more in self-learning. I have never been to a designing institute, all that I have learned is by watching online tutorials and by working with a technology company. Though I also believe that self-learning is crippled when you don’t have the passion for something. 
-
-                </h3>
-         </div>
-         </div>
-           <div class="col-md-6">
-           <img class="aqil-img" src="img/style1.png" alt="">
-         </div>
-       </div>
-       
-     </div>
-    </div>
-  </section>
-
 
  
   <section class="background bgGray noise">
@@ -255,11 +228,20 @@
                     </a>
                 </div>
             </div>  
+
            <div class="col-md-3 col-xs-6"> 
                 <div class="wbox">  
                     <a href="http://biglytech.net:1122/" target="_blank">
                         <img src="portfolio-img/Centigrademedia.jpg" alt="">
                         <p>Centigrademedia</p>
+                    </a>
+                </div>
+            </div>    
+            <div class="col-md-3 col-xs-6"> 
+                <div class="wbox">  
+                    <a href="http://blockchainmagazine.org/" target="_blank">
+                        <img src="portfolio-img/block.png" alt="">
+                        <p>blockchainmagazine</p>
                     </a>
                 </div>
             </div>  
@@ -293,7 +275,7 @@
             </div>
           </div>
           <div class="col-md-8">
-            <img class="style-5img" src="img/style5.png" class="" alt="">
+           <img class="aqil-img" src="img/style1.png" alt="">
           </div>
         </div>
       </div>
@@ -370,17 +352,129 @@
     </div>
   </section>
 
-  <section class="background overlay hidden-xs" style="background-image: url(img/designer.jpeg);">
+
+  <section class="background overlay" style="background-image: url(portfolio-img/expereince.jpeg);">
     <div class="content-wrapper">
      <div class="container">
-        <div class="atvImg" style="height: 80%">
-           <div class="atvImg-layer" data-img="img/layer4.png"></div>
-           <div class="atvImg-layer" data-img="img/layer2.png"> 
-           </div>
-        </div>
+      <div class="" style="position: relative;                                                                                                                                                                                                                                                                                                                              ">
+        <h1 class="abutmetext" style="top:70px;left: -380;">Experience</h1>
+          
+          <ul class="exp-time">
+            <li>
+               <h4 class="fw300">1-1-2015 - Present</h4>
+                  <h2 class="fw300">Edunuts</h2>
+                   <p class="lead">
+                   I come from a small village, named Asraha, 
+                  </p>
+
+            </li>
+              <li>
+               <h4 class="fw300">Date</h4>
+                  <h2 class="fw300">freelance</h2>
+                   <p class="lead freelance-list">
+                    
+                      <a href="http://biglytech.net/" target="_blank">Bigly </a>
+                      <a href="http://asraha.com" target="_blank"> Asraha</a>
+                  <a href="http://kursy.co.in/" target="_blank"> Kursy</a>
+                  <a href="http://www.sketchut.com/" target="_blank">
+                      Sketchut
+                  </a>
+                      <a href="http://biglytech.net:1122/" target="_blank">
+                        Centigrademedia
+                    </a>
+                 <a href="http://www.justdesk.in/" target="_blank">
+                        Just Desk
+                    </a>
+                     <a href="http://asraha.com/india" target="_blank">
+                      Asraha/India
+                  </a>
+                  </p>
+
+            </li>
+          </ul>
+        
+         
+      </div>
+
+
       </div>
     </div>
   </section>
+
+
+  <section class="background bgOrange noise">
+    <div class="content-wrapper">
+        <div class="container">
+        <h1 class="hidden-xs" style="margin-top: 50px;">&nbsp;</h1>
+          <div class="row">
+              <div class="col-md-5">
+
+              <div class="text-center">
+          <h1 class="fw300">Contact Me</h1>
+
+          <h3 class="fw300">Phone: 7210562014</h3>
+          <h3 class="fw300">Email: aqilali381@gmail.com</h3>
+           <ul class="list-inline fsocial profile">
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100011049845433">
+                    <img src="/img/facebook.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/md-aqil-09430a109/" target="_blank">
+                    <img src="/img/linkedin.png" alt="">
+                  </a>
+                </li>
+                <li>
+                <a href="tel:7210562014" title="7210562014">
+                <img  src="/img/whatsapp.png" alt="">
+                </a>
+                </li>
+                <li><a href="https://twitter.com/aqil4k">
+                <img src="/img/twitter.png" alt=""></a></li>  
+                <li>
+                <a href="https://www.youtube.com/channel/UC61XYpVLeBp8g_BqUo6lvsw"><img src="/img/youtube.png" alt=""></a></li>
+                
+              </ul>
+        </div>
+
+
+
+              </div>
+              <div class="col-md-7">
+                <div class="demo-1">
+                  <!-- a low-tech hack for pre-loading the img -->
+                  <div class="preload" style="overflow: hidden; width: 0px; height: 0px">
+                    <img src="img/site1.jpg" />
+                    <img src="img/site2.jpg" />
+                    <img src="img/site3.jpg" />
+                    <img src="img/site3r.jpg" />
+                    <img src="img/site4.jpg" />
+                    <img src="img/site4r.jpg" />
+                  </div>
+                  <!-- Top Navigation -->
+                
+                  <div class="main clearfix">
+                    <div class="md-slider">
+                      <div class="md-device-wrapper">
+                        <div class="md-device md-device-1">
+                          <a href="#"><img src="img/site1.jpg" /></a>
+                          <div class="md-border-element"></div>
+                          <div class="md-base-element"></div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+
 </div>
 
 @endsection
