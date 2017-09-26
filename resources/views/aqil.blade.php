@@ -410,6 +410,7 @@
               <div class="col-md-5">
 
               <div class="text-center">
+                <h1>&nbsp;</h1>
           <h1 class="fw300">Contact Me</h1>
 
           <h3 class="fw300">Phone: 7210562014</h3>
