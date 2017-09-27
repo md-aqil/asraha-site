@@ -293,30 +293,36 @@
             <h3 class="fw300">HTML</h3>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" 
-                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             <h3 class="fw300">CSS</h3>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" 
-                    style="width: 25%; height: 5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    style="width: 80%; height: 5px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
               <h3 class="fw300">javaScript</h3>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" 
-                    style="width: 25%; height: 5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    style="width: 40%; height: 5px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
                <h3 class="fw300">Photoshop</h3>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" 
-                    style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
+
                <h3 class="fw300">Illustrator</h3>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <h3 class="fw300">Wordpress</h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
             </div>
           </div>
@@ -364,7 +370,7 @@
                <h4 class="fw300">1-1-2015 - Present</h4>
                   <h2 class="fw300">Edunuts</h2>
                    <p class="lead">
-                   I come from a small village, named Asraha, 
+                      Degrees don't define skills. 
                   </p>
 
             </li>
