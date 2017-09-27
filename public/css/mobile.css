@@ -123,8 +123,9 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
   height: 100px;
   margin-bottom: 40px;
  }
-<<<<<<< HEAD
-=======
- 
->>>>>>> 4b70dfe313e0fcfb4b1f028c01cfca8cfa6ddefe
+
+
+.exp-time {
+  margin-left: 10px !important;
+}
 }/*media*/
