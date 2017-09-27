@@ -57,7 +57,6 @@
 .exp-time {
   list-style: none;
     border-left: 2px solid #fff;
-    margin-left: 0;
     padding-left: 20px;
     margin-left: 100px;
 }
@@ -75,12 +74,13 @@
     left: -26px;
 }
 .freelance-list a {
-  color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
+    color: #fff;
     border: 1px solid #fff;
     padding: 4px;
     font-size: 20px;
+    display: inline-block;
+    margin: 5px;
+        padding: 5px 10px;
 }
 .freelance-list a:hover {
   background: #fff;
